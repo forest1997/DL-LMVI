@@ -1,0 +1,684 @@
+[
+  {
+    "group": "2DG",
+    "frame": "2DGLT1_images_20260101_130207_RGB",
+    "input": "Reproducibility/Inputs/2DG/2DGLT1_images_20260101_130207_RGB.png",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/2DG/2DGLT1_images_20260101_130207_RGB/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/2DG/2DGLT1_images_20260101_130207_RGB/prediction_cytoplasm.png",
+        "expected_dice": 0.8445290295
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/2DG/2DGLT1_images_20260101_130207_RGB/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/2DG/2DGLT1_images_20260101_130207_RGB/prediction_nucleus.png",
+        "expected_dice": 0.8414888659
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/2DG/2DGLT1_images_20260101_130207_RGB/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/2DG/2DGLT1_images_20260101_130207_RGB/prediction_nucleolus.png",
+        "expected_dice": 0.8107580825
+      }
+    }
+  },
+  {
+    "group": "2DG",
+    "frame": "2HelaNew2dgF5_images_20251021_002124_RGB",
+    "input": "Reproducibility/Inputs/2DG/2HelaNew2dgF5_images_20251021_002124_RGB.png",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/2DG/2HelaNew2dgF5_images_20251021_002124_RGB/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/2DG/2HelaNew2dgF5_images_20251021_002124_RGB/prediction_cytoplasm.png",
+        "expected_dice": 0.8218909418
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/2DG/2HelaNew2dgF5_images_20251021_002124_RGB/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/2DG/2HelaNew2dgF5_images_20251021_002124_RGB/prediction_nucleus.png",
+        "expected_dice": 0.8499719723
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/2DG/2HelaNew2dgF5_images_20251021_002124_RGB/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/2DG/2HelaNew2dgF5_images_20251021_002124_RGB/prediction_nucleolus.png",
+        "expected_dice": 0.8121641106
+      }
+    }
+  },
+  {
+    "group": "2DG",
+    "frame": "Hela102dg_images_20250924_181334_RGB",
+    "input": "Reproducibility/Inputs/2DG/Hela102dg_images_20250924_181334_RGB.png",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/2DG/Hela102dg_images_20250924_181334_RGB/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/2DG/Hela102dg_images_20250924_181334_RGB/prediction_cytoplasm.png",
+        "expected_dice": 0.8234048021
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/2DG/Hela102dg_images_20250924_181334_RGB/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/2DG/Hela102dg_images_20250924_181334_RGB/prediction_nucleus.png",
+        "expected_dice": 0.8789220806
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/2DG/Hela102dg_images_20250924_181334_RGB/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/2DG/Hela102dg_images_20250924_181334_RGB/prediction_nucleolus.png",
+        "expected_dice": 0.8196266543
+      }
+    }
+  },
+  {
+    "group": "2DG",
+    "frame": "NormalHela1LFOVNewZAfter_images_20251123_205913_RGB",
+    "input": "Reproducibility/Inputs/2DG/NormalHela1LFOVNewZAfter_images_20251123_205913_RGB.png",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/2DG/NormalHela1LFOVNewZAfter_images_20251123_205913_RGB/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/2DG/NormalHela1LFOVNewZAfter_images_20251123_205913_RGB/prediction_cytoplasm.png",
+        "expected_dice": 0.8338923469
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/2DG/NormalHela1LFOVNewZAfter_images_20251123_205913_RGB/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/2DG/NormalHela1LFOVNewZAfter_images_20251123_205913_RGB/prediction_nucleus.png",
+        "expected_dice": 0.8845309252
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/2DG/NormalHela1LFOVNewZAfter_images_20251123_205913_RGB/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/2DG/NormalHela1LFOVNewZAfter_images_20251123_205913_RGB/prediction_nucleolus.png",
+        "expected_dice": 0.870468948
+      }
+    }
+  },
+  {
+    "group": "2DG",
+    "frame": "P2New_images_20251226_163553_RGB",
+    "input": "Reproducibility/Inputs/2DG/P2New_images_20251226_163553_RGB.png",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/2DG/P2New_images_20251226_163553_RGB/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/2DG/P2New_images_20251226_163553_RGB/prediction_cytoplasm.png",
+        "expected_dice": 0.880848457
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/2DG/P2New_images_20251226_163553_RGB/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/2DG/P2New_images_20251226_163553_RGB/prediction_nucleus.png",
+        "expected_dice": 0.9125277984
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/2DG/P2New_images_20251226_163553_RGB/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/2DG/P2New_images_20251226_163553_RGB/prediction_nucleolus.png",
+        "expected_dice": 0.8640845524
+      }
+    }
+  },
+  {
+    "group": "2DG",
+    "frame": "P3New_images_20251226_170333_RGB",
+    "input": "Reproducibility/Inputs/2DG/P3New_images_20251226_170333_RGB.png",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/2DG/P3New_images_20251226_170333_RGB/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/2DG/P3New_images_20251226_170333_RGB/prediction_cytoplasm.png",
+        "expected_dice": 0.838905056
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/2DG/P3New_images_20251226_170333_RGB/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/2DG/P3New_images_20251226_170333_RGB/prediction_nucleus.png",
+        "expected_dice": 0.892327248
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/2DG/P3New_images_20251226_170333_RGB/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/2DG/P3New_images_20251226_170333_RGB/prediction_nucleolus.png",
+        "expected_dice": 0.8145770931
+      }
+    }
+  },
+  {
+    "group": "4T1",
+    "frame": "4t1_save_20260723_155148_HSV_RGB",
+    "input": "Reproducibility/Inputs/4T1/4t1_save_20260723_155148_HSV_RGB.tif",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/4T1/4t1_save_20260723_155148_HSV_RGB/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/4T1/4t1_save_20260723_155148_HSV_RGB/prediction_cytoplasm.png",
+        "expected_dice": 0.8724734498
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/4T1/4t1_save_20260723_155148_HSV_RGB/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/4T1/4t1_save_20260723_155148_HSV_RGB/prediction_nucleus.png",
+        "expected_dice": 0.8781391147
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/4T1/4t1_save_20260723_155148_HSV_RGB/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/4T1/4t1_save_20260723_155148_HSV_RGB/prediction_nucleolus.png",
+        "expected_dice": 0.8629498941
+      }
+    }
+  },
+  {
+    "group": "4T1",
+    "frame": "4t1_save_20260723_162941_HSV_RGB",
+    "input": "Reproducibility/Inputs/4T1/4t1_save_20260723_162941_HSV_RGB.tif",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/4T1/4t1_save_20260723_162941_HSV_RGB/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/4T1/4t1_save_20260723_162941_HSV_RGB/prediction_cytoplasm.png",
+        "expected_dice": 0.9009142798
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/4T1/4t1_save_20260723_162941_HSV_RGB/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/4T1/4t1_save_20260723_162941_HSV_RGB/prediction_nucleus.png",
+        "expected_dice": 0.8860773921
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/4T1/4t1_save_20260723_162941_HSV_RGB/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/4T1/4t1_save_20260723_162941_HSV_RGB/prediction_nucleolus.png",
+        "expected_dice": 0.7630326742
+      }
+    }
+  },
+  {
+    "group": "4T1",
+    "frame": "4t1_save_20260723_165842_HSV_RGB",
+    "input": "Reproducibility/Inputs/4T1/4t1_save_20260723_165842_HSV_RGB.tif",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/4T1/4t1_save_20260723_165842_HSV_RGB/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/4T1/4t1_save_20260723_165842_HSV_RGB/prediction_cytoplasm.png",
+        "expected_dice": 0.8234610735
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/4T1/4t1_save_20260723_165842_HSV_RGB/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/4T1/4t1_save_20260723_165842_HSV_RGB/prediction_nucleus.png",
+        "expected_dice": 0.8193881405
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/4T1/4t1_save_20260723_165842_HSV_RGB/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/4T1/4t1_save_20260723_165842_HSV_RGB/prediction_nucleolus.png",
+        "expected_dice": 0.8197463036
+      }
+    }
+  },
+  {
+    "group": "4T1",
+    "frame": "4T1_save_20260724_123502_HSV_RGB",
+    "input": "Reproducibility/Inputs/4T1/4T1_save_20260724_123502_HSV_RGB.tif",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/4T1/4T1_save_20260724_123502_HSV_RGB/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/4T1/4T1_save_20260724_123502_HSV_RGB/prediction_cytoplasm.png",
+        "expected_dice": 0.8727312092
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/4T1/4T1_save_20260724_123502_HSV_RGB/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/4T1/4T1_save_20260724_123502_HSV_RGB/prediction_nucleus.png",
+        "expected_dice": 0.9178750508
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/4T1/4T1_save_20260724_123502_HSV_RGB/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/4T1/4T1_save_20260724_123502_HSV_RGB/prediction_nucleolus.png",
+        "expected_dice": 0.8379477759
+      }
+    }
+  },
+  {
+    "group": "4T1",
+    "frame": "4T1_save_20260724_123703_HSV_RGB",
+    "input": "Reproducibility/Inputs/4T1/4T1_save_20260724_123703_HSV_RGB.tif",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/4T1/4T1_save_20260724_123703_HSV_RGB/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/4T1/4T1_save_20260724_123703_HSV_RGB/prediction_cytoplasm.png",
+        "expected_dice": 0.8970354066
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/4T1/4T1_save_20260724_123703_HSV_RGB/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/4T1/4T1_save_20260724_123703_HSV_RGB/prediction_nucleus.png",
+        "expected_dice": 0.8967668538
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/4T1/4T1_save_20260724_123703_HSV_RGB/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/4T1/4T1_save_20260724_123703_HSV_RGB/prediction_nucleolus.png",
+        "expected_dice": 0.780047758
+      }
+    }
+  },
+  {
+    "group": "4T1",
+    "frame": "4T1_save_20260724_141221_HSV_RGB",
+    "input": "Reproducibility/Inputs/4T1/4T1_save_20260724_141221_HSV_RGB.tif",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/4T1/4T1_save_20260724_141221_HSV_RGB/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/4T1/4T1_save_20260724_141221_HSV_RGB/prediction_cytoplasm.png",
+        "expected_dice": 0.8643880926
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/4T1/4T1_save_20260724_141221_HSV_RGB/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/4T1/4T1_save_20260724_141221_HSV_RGB/prediction_nucleus.png",
+        "expected_dice": 0.8886820223
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/4T1/4T1_save_20260724_141221_HSV_RGB/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/4T1/4T1_save_20260724_141221_HSV_RGB/prediction_nucleolus.png",
+        "expected_dice": 0.8697721012
+      }
+    }
+  },
+  {
+    "group": "HeLa",
+    "frame": "Hela1",
+    "input": "Reproducibility/Inputs/HeLa/Hela1.png",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/HeLa/Hela1/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/HeLa/Hela1/prediction_cytoplasm.png",
+        "expected_dice": 0.8782397224
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/HeLa/Hela1/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/HeLa/Hela1/prediction_nucleus.png",
+        "expected_dice": 0.8970853604
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/HeLa/Hela1/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/HeLa/Hela1/prediction_nucleolus.png",
+        "expected_dice": 0.8728369582
+      }
+    }
+  },
+  {
+    "group": "HeLa",
+    "frame": "Hela2",
+    "input": "Reproducibility/Inputs/HeLa/Hela2.png",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/HeLa/Hela2/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/HeLa/Hela2/prediction_cytoplasm.png",
+        "expected_dice": 0.8780879364
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/HeLa/Hela2/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/HeLa/Hela2/prediction_nucleus.png",
+        "expected_dice": 0.869182236
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/HeLa/Hela2/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/HeLa/Hela2/prediction_nucleolus.png",
+        "expected_dice": 0.8824244157
+      }
+    }
+  },
+  {
+    "group": "HeLa",
+    "frame": "Hela3",
+    "input": "Reproducibility/Inputs/HeLa/Hela3.png",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/HeLa/Hela3/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/HeLa/Hela3/prediction_cytoplasm.png",
+        "expected_dice": 0.8132770115
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/HeLa/Hela3/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/HeLa/Hela3/prediction_nucleus.png",
+        "expected_dice": 0.8326042461
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/HeLa/Hela3/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/HeLa/Hela3/prediction_nucleolus.png",
+        "expected_dice": 0.8443962401
+      }
+    }
+  },
+  {
+    "group": "HeLa",
+    "frame": "Hela4",
+    "input": "Reproducibility/Inputs/HeLa/Hela4.png",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/HeLa/Hela4/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/HeLa/Hela4/prediction_cytoplasm.png",
+        "expected_dice": 0.8064337483
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/HeLa/Hela4/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/HeLa/Hela4/prediction_nucleus.png",
+        "expected_dice": 0.8050238969
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/HeLa/Hela4/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/HeLa/Hela4/prediction_nucleolus.png",
+        "expected_dice": 0.8266088696
+      }
+    }
+  },
+  {
+    "group": "HeLa",
+    "frame": "Hela5",
+    "input": "Reproducibility/Inputs/HeLa/Hela5.png",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/HeLa/Hela5/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/HeLa/Hela5/prediction_cytoplasm.png",
+        "expected_dice": 0.8715724932
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/HeLa/Hela5/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/HeLa/Hela5/prediction_nucleus.png",
+        "expected_dice": 0.8694627658
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/HeLa/Hela5/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/HeLa/Hela5/prediction_nucleolus.png",
+        "expected_dice": 0.8671544715
+      }
+    }
+  },
+  {
+    "group": "HeLa",
+    "frame": "Hela6",
+    "input": "Reproducibility/Inputs/HeLa/Hela6.png",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/HeLa/Hela6/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/HeLa/Hela6/prediction_cytoplasm.png",
+        "expected_dice": 0.8790696172
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/HeLa/Hela6/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/HeLa/Hela6/prediction_nucleus.png",
+        "expected_dice": 0.9119787163
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/HeLa/Hela6/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/HeLa/Hela6/prediction_nucleolus.png",
+        "expected_dice": 0.85850979
+      }
+    }
+  },
+  {
+    "group": "HeLa",
+    "frame": "Hela7",
+    "input": "Reproducibility/Inputs/HeLa/Hela7.png",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/HeLa/Hela7/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/HeLa/Hela7/prediction_cytoplasm.png",
+        "expected_dice": 0.8748659396
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/HeLa/Hela7/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/HeLa/Hela7/prediction_nucleus.png",
+        "expected_dice": 0.9018443516
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/HeLa/Hela7/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/HeLa/Hela7/prediction_nucleolus.png",
+        "expected_dice": 0.8482576985
+      }
+    }
+  },
+  {
+    "group": "HepG2",
+    "frame": "HeG2p_images_20251207_163322_RGB",
+    "input": "Reproducibility/Inputs/HepG2/HeG2p_images_20251207_163322_RGB.png",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/HepG2/HeG2p_images_20251207_163322_RGB/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/HepG2/HeG2p_images_20251207_163322_RGB/prediction_cytoplasm.png",
+        "expected_dice": 0.8862140538
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/HepG2/HeG2p_images_20251207_163322_RGB/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/HepG2/HeG2p_images_20251207_163322_RGB/prediction_nucleus.png",
+        "expected_dice": 0.8730573109
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/HepG2/HeG2p_images_20251207_163322_RGB/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/HepG2/HeG2p_images_20251207_163322_RGB/prediction_nucleolus.png",
+        "expected_dice": 0.8513632366
+      }
+    }
+  },
+  {
+    "group": "HepG2",
+    "frame": "HeG2pZ2-1UM_images_20251207_170439_RGB",
+    "input": "Reproducibility/Inputs/HepG2/HeG2pZ2-1UM_images_20251207_170439_RGB.png",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/HepG2/HeG2pZ2-1UM_images_20251207_170439_RGB/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/HepG2/HeG2pZ2-1UM_images_20251207_170439_RGB/prediction_cytoplasm.png",
+        "expected_dice": 0.8830146312
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/HepG2/HeG2pZ2-1UM_images_20251207_170439_RGB/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/HepG2/HeG2pZ2-1UM_images_20251207_170439_RGB/prediction_nucleus.png",
+        "expected_dice": 0.8773063625
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/HepG2/HeG2pZ2-1UM_images_20251207_170439_RGB/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/HepG2/HeG2pZ2-1UM_images_20251207_170439_RGB/prediction_nucleolus.png",
+        "expected_dice": 0.8272403753
+      }
+    }
+  },
+  {
+    "group": "HepG2",
+    "frame": "HepG2-2_images_20251217_105011_RGB",
+    "input": "Reproducibility/Inputs/HepG2/HepG2-2_images_20251217_105011_RGB.png",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/HepG2/HepG2-2_images_20251217_105011_RGB/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/HepG2/HepG2-2_images_20251217_105011_RGB/prediction_cytoplasm.png",
+        "expected_dice": 0.8944450553
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/HepG2/HepG2-2_images_20251217_105011_RGB/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/HepG2/HepG2-2_images_20251217_105011_RGB/prediction_nucleus.png",
+        "expected_dice": 0.9122435344
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/HepG2/HepG2-2_images_20251217_105011_RGB/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/HepG2/HepG2-2_images_20251217_105011_RGB/prediction_nucleolus.png",
+        "expected_dice": 0.8340632603
+      }
+    }
+  },
+  {
+    "group": "HepG2",
+    "frame": "P3Before2DG_images_20251226_153335_RGB",
+    "input": "Reproducibility/Inputs/HepG2/P3Before2DG_images_20251226_153335_RGB.png",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/HepG2/P3Before2DG_images_20251226_153335_RGB/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/HepG2/P3Before2DG_images_20251226_153335_RGB/prediction_cytoplasm.png",
+        "expected_dice": 0.8690186857
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/HepG2/P3Before2DG_images_20251226_153335_RGB/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/HepG2/P3Before2DG_images_20251226_153335_RGB/prediction_nucleus.png",
+        "expected_dice": 0.834856922
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/HepG2/P3Before2DG_images_20251226_153335_RGB/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/HepG2/P3Before2DG_images_20251226_153335_RGB/prediction_nucleolus.png",
+        "expected_dice": 0.7641804053
+      }
+    }
+  },
+  {
+    "group": "HepG2",
+    "frame": "P4Before2DG_images_20251226_153445_RGB",
+    "input": "Reproducibility/Inputs/HepG2/P4Before2DG_images_20251226_153445_RGB.png",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/HepG2/P4Before2DG_images_20251226_153445_RGB/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/HepG2/P4Before2DG_images_20251226_153445_RGB/prediction_cytoplasm.png",
+        "expected_dice": 0.8846665917
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/HepG2/P4Before2DG_images_20251226_153445_RGB/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/HepG2/P4Before2DG_images_20251226_153445_RGB/prediction_nucleus.png",
+        "expected_dice": 0.887247726
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/HepG2/P4Before2DG_images_20251226_153445_RGB/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/HepG2/P4Before2DG_images_20251226_153445_RGB/prediction_nucleolus.png",
+        "expected_dice": 0.801368061
+      }
+    }
+  },
+  {
+    "group": "OA",
+    "frame": "Newcell3_images_20251019_234707_RGB",
+    "input": "Reproducibility/Inputs/OA/Newcell3_images_20251019_234707_RGB.png",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/OA/Newcell3_images_20251019_234707_RGB/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/OA/Newcell3_images_20251019_234707_RGB/prediction_cytoplasm.png",
+        "expected_dice": 0.8775252611
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/OA/Newcell3_images_20251019_234707_RGB/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/OA/Newcell3_images_20251019_234707_RGB/prediction_nucleus.png",
+        "expected_dice": 0.9141141283
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/OA/Newcell3_images_20251019_234707_RGB/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/OA/Newcell3_images_20251019_234707_RGB/prediction_nucleolus.png",
+        "expected_dice": 0.8425688825
+      }
+    }
+  },
+  {
+    "group": "OA",
+    "frame": "OA2FOV2_images_20251215_211817_RGB",
+    "input": "Reproducibility/Inputs/OA/OA2FOV2_images_20251215_211817_RGB.png",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/OA/OA2FOV2_images_20251215_211817_RGB/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/OA/OA2FOV2_images_20251215_211817_RGB/prediction_cytoplasm.png",
+        "expected_dice": 0.8595368716
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/OA/OA2FOV2_images_20251215_211817_RGB/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/OA/OA2FOV2_images_20251215_211817_RGB/prediction_nucleus.png",
+        "expected_dice": 0.8320388934
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/OA/OA2FOV2_images_20251215_211817_RGB/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/OA/OA2FOV2_images_20251215_211817_RGB/prediction_nucleolus.png",
+        "expected_dice": 0.8055099648
+      }
+    }
+  },
+  {
+    "group": "OA",
+    "frame": "OA2FOV2_images_20251215_211925_RGB",
+    "input": "Reproducibility/Inputs/OA/OA2FOV2_images_20251215_211925_RGB.png",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/OA/OA2FOV2_images_20251215_211925_RGB/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/OA/OA2FOV2_images_20251215_211925_RGB/prediction_cytoplasm.png",
+        "expected_dice": 0.8413829329
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/OA/OA2FOV2_images_20251215_211925_RGB/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/OA/OA2FOV2_images_20251215_211925_RGB/prediction_nucleus.png",
+        "expected_dice": 0.8421093369
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/OA/OA2FOV2_images_20251215_211925_RGB/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/OA/OA2FOV2_images_20251215_211925_RGB/prediction_nucleolus.png",
+        "expected_dice": 0.8455179817
+      }
+    }
+  },
+  {
+    "group": "OA",
+    "frame": "OA2FOV2_images_20251215_211939_RGB",
+    "input": "Reproducibility/Inputs/OA/OA2FOV2_images_20251215_211939_RGB.png",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/OA/OA2FOV2_images_20251215_211939_RGB/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/OA/OA2FOV2_images_20251215_211939_RGB/prediction_cytoplasm.png",
+        "expected_dice": 0.8900864037
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/OA/OA2FOV2_images_20251215_211939_RGB/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/OA/OA2FOV2_images_20251215_211939_RGB/prediction_nucleus.png",
+        "expected_dice": 0.887600885
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/OA/OA2FOV2_images_20251215_211939_RGB/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/OA/OA2FOV2_images_20251215_211939_RGB/prediction_nucleolus.png",
+        "expected_dice": 0.8527574891
+      }
+    }
+  },
+  {
+    "group": "OA",
+    "frame": "OA9LongTime_images_20250925_225313_RGB",
+    "input": "Reproducibility/Inputs/OA/OA9LongTime_images_20250925_225313_RGB.png",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/OA/OA9LongTime_images_20250925_225313_RGB/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/OA/OA9LongTime_images_20250925_225313_RGB/prediction_cytoplasm.png",
+        "expected_dice": 0.8584284854
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/OA/OA9LongTime_images_20250925_225313_RGB/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/OA/OA9LongTime_images_20250925_225313_RGB/prediction_nucleus.png",
+        "expected_dice": 0.8831710475
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/OA/OA9LongTime_images_20250925_225313_RGB/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/OA/OA9LongTime_images_20250925_225313_RGB/prediction_nucleolus.png",
+        "expected_dice": 0.8666963888
+      }
+    }
+  },
+  {
+    "group": "OA",
+    "frame": "OAcellsLFOV3_images_20251113_220216_RGB",
+    "input": "Reproducibility/Inputs/OA/OAcellsLFOV3_images_20251113_220216_RGB.png",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/OA/OAcellsLFOV3_images_20251113_220216_RGB/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/OA/OAcellsLFOV3_images_20251113_220216_RGB/prediction_cytoplasm.png",
+        "expected_dice": 0.7638226551
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/OA/OAcellsLFOV3_images_20251113_220216_RGB/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/OA/OAcellsLFOV3_images_20251113_220216_RGB/prediction_nucleus.png",
+        "expected_dice": 0.8435928586
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/OA/OAcellsLFOV3_images_20251113_220216_RGB/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/OA/OAcellsLFOV3_images_20251113_220216_RGB/prediction_nucleolus.png",
+        "expected_dice": 0.8260593324
+      }
+    }
+  },
+  {
+    "group": "OA",
+    "frame": "OALT_images_20251215_220054_RGB",
+    "input": "Reproducibility/Inputs/OA/OALT_images_20251215_220054_RGB.png",
+    "compartments": {
+      "cytoplasm": {
+        "gt": "Reproducibility/Masks/OA/OALT_images_20251215_220054_RGB/gt_cytoplasm.png",
+        "prediction": "Reproducibility/Masks/OA/OALT_images_20251215_220054_RGB/prediction_cytoplasm.png",
+        "expected_dice": 0.9052584756
+      },
+      "nucleus": {
+        "gt": "Reproducibility/Masks/OA/OALT_images_20251215_220054_RGB/gt_nucleus.png",
+        "prediction": "Reproducibility/Masks/OA/OALT_images_20251215_220054_RGB/prediction_nucleus.png",
+        "expected_dice": 0.8612642233
+      },
+      "nucleolus": {
+        "gt": "Reproducibility/Masks/OA/OALT_images_20251215_220054_RGB/gt_nucleolus.png",
+        "prediction": "Reproducibility/Masks/OA/OALT_images_20251215_220054_RGB/prediction_nucleolus.png",
+        "expected_dice": 0.8589956266
+      }
+    }
+  }
+]

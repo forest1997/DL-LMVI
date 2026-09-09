@@ -1,0 +1,2351 @@
+{
+  "frame_count": 31,
+  "mask_count": 93,
+  "all_pixel_counts_match": true,
+  "all_predictions_matched_to_outline_archive": true,
+  "unique_input_counts": {
+    "2DG/2DGLT1_images_20260101_130207_RGB": 1,
+    "2DG/2HelaNew2dgF5_images_20251021_002124_RGB": 1,
+    "2DG/Hela102dg_images_20250924_181334_RGB": 1,
+    "2DG/NormalHela1LFOVNewZAfter_images_20251123_205913_RGB": 1,
+    "2DG/P2New_images_20251226_163553_RGB": 1,
+    "2DG/P3New_images_20251226_170333_RGB": 1,
+    "4T1/4t1_save_20260723_155148_HSV_RGB": 1,
+    "4T1/4t1_save_20260723_162941_HSV_RGB": 1,
+    "4T1/4t1_save_20260723_165842_HSV_RGB": 1,
+    "4T1/4T1_save_20260724_123502_HSV_RGB": 1,
+    "4T1/4T1_save_20260724_123703_HSV_RGB": 1,
+    "4T1/4T1_save_20260724_141221_HSV_RGB": 1,
+    "HeLa/Hela1": 1,
+    "HeLa/Hela2": 1,
+    "HeLa/Hela3": 1,
+    "HeLa/Hela4": 1,
+    "HeLa/Hela5": 1,
+    "HeLa/Hela6": 1,
+    "HeLa/Hela7": 1,
+    "HepG2/HeG2p_images_20251207_163322_RGB": 1,
+    "HepG2/HeG2pZ2-1UM_images_20251207_170439_RGB": 1,
+    "HepG2/HepG2-2_images_20251217_105011_RGB": 1,
+    "HepG2/P3Before2DG_images_20251226_153335_RGB": 1,
+    "HepG2/P4Before2DG_images_20251226_153445_RGB": 1,
+    "OA/Newcell3_images_20251019_234707_RGB": 1,
+    "OA/OA2FOV2_images_20251215_211817_RGB": 1,
+    "OA/OA2FOV2_images_20251215_211925_RGB": 1,
+    "OA/OA2FOV2_images_20251215_211939_RGB": 1,
+    "OA/OA9LongTime_images_20250925_225313_RGB": 1,
+    "OA/OAcellsLFOV3_images_20251113_220216_RGB": 1,
+    "OA/OALT_images_20251215_220054_RGB": 1
+  },
+  "gui_archive_comparison": [
+    {
+      "file": "DFFOCT_Cell_Annotator/run_annotator.py",
+      "archive_matches_current": true
+    },
+    {
+      "file": "DFFOCT_Cell_Annotator/run_annotator.bat",
+      "archive_matches_current": true
+    },
+    {
+      "file": "DFFOCT_Cell_Annotator/README_zh.md",
+      "archive_matches_current": false
+    },
+    {
+      "file": "DFFOCT_Cell_Annotator/requirements.txt",
+      "archive_matches_current": true
+    },
+    {
+      "file": "DFFOCT_Cell_Annotator/requirements-cellpose.txt",
+      "archive_matches_current": true
+    },
+    {
+      "file": "DFFOCT_Cell_Annotator/dffoct_annotator/__init__.py",
+      "archive_matches_current": true
+    },
+    {
+      "file": "DFFOCT_Cell_Annotator/dffoct_annotator/core.py",
+      "archive_matches_current": false
+    },
+    {
+      "file": "DFFOCT_Cell_Annotator/dffoct_annotator/cellpose_adapter.py",
+      "archive_matches_current": true
+    },
+    {
+      "file": "DFFOCT_Cell_Annotator/dffoct_annotator/gui.py",
+      "archive_matches_current": false
+    },
+    {
+      "file": "DFFOCT_Cell_Annotator/tests/test_core.py",
+      "archive_matches_current": true
+    }
+  ],
+  "mask_audit": [
+    {
+      "group": "2DG",
+      "frame": "2DGLT1_images_20260101_130207_RGB",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\2DGCell\\2DGLT1_images_20260101_130207_RGB\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Cytoplasm_binary\\2DGLT1_images_20260101_130207_RGB_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Cytoplasm_binary\\2DGLT1_images_20260101_130207_RGB_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\2dg\\2DGLT1_images_20260101_130207_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\run.log",
+      "pixel_counts": [
+        101175,
+        108374,
+        131227
+      ],
+      "gt_sha256": "0d38afd41a99eacd5c9542d9387cae8a84132103080119cbd342cfbe09481bf8",
+      "pred_sha256": "2281408c036f8a5341b8962cb0101ee7f2fe18952bf309ee5f78f0cfd5b19ec9",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "2DG",
+      "frame": "2DGLT1_images_20260101_130207_RGB",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\2DGCell\\2DGLT1_images_20260101_130207_RGB\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Nucleus_binary\\2DGLT1_images_20260101_130207_RGB_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Nucleus_binary\\2DGLT1_images_20260101_130207_RGB_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\2dg\\2DGLT1_images_20260101_130207_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\run.log",
+      "pixel_counts": [
+        41530,
+        55246,
+        43460
+      ],
+      "gt_sha256": "72bbcbb9bcdd2eca9a7fb453b794297a05f22f21f404d211978f88919cf4c812",
+      "pred_sha256": "55d7cd8b47163c81f84a62a6785eb1c05e698bb73b0ec4827f58b42cc04d023a",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "2DG",
+      "frame": "2DGLT1_images_20260101_130207_RGB",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\2DGCell\\2DGLT1_images_20260101_130207_RGB\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Nucleolus_binary\\2DGLT1_images_20260101_130207_RGB_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Nucleolus_binary\\2DGLT1_images_20260101_130207_RGB_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\2dg\\2DGLT1_images_20260101_130207_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\run.log",
+      "pixel_counts": [
+        2909,
+        3599,
+        3577
+      ],
+      "gt_sha256": "e05115429134bbd1cf917bab192062e5c4c48bdeb5ddc2eba20a0beb84eaa90d",
+      "pred_sha256": "da8a747ecefcb793a577a488bba33c831407235ee2dac51b86625df82fa397da",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "2DG",
+      "frame": "2HelaNew2dgF5_images_20251021_002124_RGB",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\2DGCell\\2HelaNew2dgF5_images_20251021_002124_RGB\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Cytoplasm_binary\\2HelaNew2dgF5_images_20251021_002124_RGB_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Cytoplasm_binary\\2HelaNew2dgF5_images_20251021_002124_RGB_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\2dg\\2HelaNew2dgF5_images_20251021_002124_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\run.log",
+      "pixel_counts": [
+        116081,
+        134053,
+        148420
+      ],
+      "gt_sha256": "0ac00bc17258921d895a3bba7f515dd88fc05ef4f64fbc72559ecebfaf1177ef",
+      "pred_sha256": "8ff9d31b303f88cbf22b086ec9a98c271578fa8effbe1785f9bc21ab5b0a3e8f",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "2DG",
+      "frame": "2HelaNew2dgF5_images_20251021_002124_RGB",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\2DGCell\\2HelaNew2dgF5_images_20251021_002124_RGB\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Nucleus_binary\\2HelaNew2dgF5_images_20251021_002124_RGB_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Nucleus_binary\\2HelaNew2dgF5_images_20251021_002124_RGB_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\2dg\\2HelaNew2dgF5_images_20251021_002124_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\run.log",
+      "pixel_counts": [
+        63685,
+        82778,
+        67074
+      ],
+      "gt_sha256": "28b04720979cb3da79b6a44eb36406b9b5ae25d8ef7fd5c5bb7fc9ce2f84d75f",
+      "pred_sha256": "932fe4674e3a43acb03c4c0839df4945c12f1cb01a7eb8ad59f71ac51af881c3",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "2DG",
+      "frame": "2HelaNew2dgF5_images_20251021_002124_RGB",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\2DGCell\\2HelaNew2dgF5_images_20251021_002124_RGB\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Nucleolus_binary\\2HelaNew2dgF5_images_20251021_002124_RGB_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Nucleolus_binary\\2HelaNew2dgF5_images_20251021_002124_RGB_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\2dg\\2HelaNew2dgF5_images_20251021_002124_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\run.log",
+      "pixel_counts": [
+        3098,
+        3512,
+        4117
+      ],
+      "gt_sha256": "0e9ea1ae74ca547dbbf9f845a48c7604022dad788dd2aec0e41f1def3342ba90",
+      "pred_sha256": "423ba42f8d396241d3a1d8bd6d745edd68879dc99f2ab41cdab46dc04282cd11",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "2DG",
+      "frame": "Hela102dg_images_20250924_181334_RGB",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\2DGCell\\Hela102dg_images_20250924_181334_RGB\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Cytoplasm_binary\\Hela102dg_images_20250924_181334_RGB_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Cytoplasm_binary\\Hela102dg_images_20250924_181334_RGB_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\2dg\\Hela102dg_images_20250924_181334_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\run.log",
+      "pixel_counts": [
+        118553,
+        139542,
+        148416
+      ],
+      "gt_sha256": "f926de799655031c03c0a8ea2b236b304effe56fb800443c97682dc0157daa4b",
+      "pred_sha256": "f3cbe87d45db2a702fb30962eef535d11049f0fd01093d22ccfbbb2df36e7a40",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "2DG",
+      "frame": "Hela102dg_images_20250924_181334_RGB",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\2DGCell\\Hela102dg_images_20250924_181334_RGB\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Nucleus_binary\\Hela102dg_images_20250924_181334_RGB_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Nucleus_binary\\Hela102dg_images_20250924_181334_RGB_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\2dg\\Hela102dg_images_20250924_181334_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\run.log",
+      "pixel_counts": [
+        84148,
+        104322,
+        87158
+      ],
+      "gt_sha256": "ab4b5d0e82640e99bca06f8ad1839231269fa3d5cf3d30b97c41041467241a89",
+      "pred_sha256": "1727917e95767ab646d798af57737d0162f53707847fcd33b3c774aef049c7ff",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "2DG",
+      "frame": "Hela102dg_images_20250924_181334_RGB",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\2DGCell\\Hela102dg_images_20250924_181334_RGB\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Nucleolus_binary\\Hela102dg_images_20250924_181334_RGB_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Nucleolus_binary\\Hela102dg_images_20250924_181334_RGB_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\2dg\\Hela102dg_images_20250924_181334_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\run.log",
+      "pixel_counts": [
+        7091,
+        8025,
+        9278
+      ],
+      "gt_sha256": "957b900d31e3eee8c54da94058d400bd1f0b72f098a46bd14b779acaa82830d5",
+      "pred_sha256": "5645398a259ca010f637982070fe4db85a963b8401d02af515b6f6c2aa1a4d49",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "2DG",
+      "frame": "NormalHela1LFOVNewZAfter_images_20251123_205913_RGB",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\2DGCell\\NormalHela1LFOVNewZAfter_images_20251123_205913_RGB\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Cytoplasm_binary\\NormalHela1LFOVNewZAfter_images_20251123_205913_RGB_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Cytoplasm_binary\\NormalHela1LFOVNewZAfter_images_20251123_205913_RGB_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\2dg\\NormalHela1LFOVNewZAfter_images_20251123_205913_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\run.log",
+      "pixel_counts": [
+        103426,
+        118013,
+        130043
+      ],
+      "gt_sha256": "62d5537d599b2506071855bcea506efcd58e7b2e196f45a4311ab161bfdbe525",
+      "pred_sha256": "7da5683850ffae3fa56b658f9e4f98bddbc43e223ada99b983b9c9299a0fc039",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "2DG",
+      "frame": "NormalHela1LFOVNewZAfter_images_20251123_205913_RGB",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\2DGCell\\NormalHela1LFOVNewZAfter_images_20251123_205913_RGB\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Nucleus_binary\\NormalHela1LFOVNewZAfter_images_20251123_205913_RGB_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Nucleus_binary\\NormalHela1LFOVNewZAfter_images_20251123_205913_RGB_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\2dg\\NormalHela1LFOVNewZAfter_images_20251123_205913_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\run.log",
+      "pixel_counts": [
+        75324,
+        93360,
+        76954
+      ],
+      "gt_sha256": "e7962d18c7d029529f375686dbc5c98cb8c44cb0ba284393ea30e2a980910b8b",
+      "pred_sha256": "c269afdc6ec7edccc9bd20f6277e3028687ba0afb3919df2f352fdcd2bf672bb",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "2DG",
+      "frame": "NormalHela1LFOVNewZAfter_images_20251123_205913_RGB",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\2DGCell\\NormalHela1LFOVNewZAfter_images_20251123_205913_RGB\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Nucleolus_binary\\NormalHela1LFOVNewZAfter_images_20251123_205913_RGB_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Nucleolus_binary\\NormalHela1LFOVNewZAfter_images_20251123_205913_RGB_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\2dg\\NormalHela1LFOVNewZAfter_images_20251123_205913_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\run.log",
+      "pixel_counts": [
+        8585,
+        9535,
+        10190
+      ],
+      "gt_sha256": "097ecb2ab64e939ada29c67f8308fd759b52aaf17d3dc3cd9f06f65ad043be99",
+      "pred_sha256": "9cb9e5c1ef13e6586e8eb3b7d4ea57b93f944f69217a74cc8c6532922c5b55be",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "2DG",
+      "frame": "P2New_images_20251226_163553_RGB",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\2DGCell\\P2New_images_20251226_163553_RGB\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Cytoplasm_binary\\P2New_images_20251226_163553_RGB_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Cytoplasm_binary\\P2New_images_20251226_163553_RGB_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\2dg\\P2New_images_20251226_163553_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\run.log",
+      "pixel_counts": [
+        103527,
+        113029,
+        122033
+      ],
+      "gt_sha256": "34d8cde85425cbef22a64f7ab03e012a3d397ec9ce0c71e8204851687c8776cc",
+      "pred_sha256": "6bfe46565021bcd5bc8075edaa0702c051db39e570911f5fa32d82f8151606f5",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "2DG",
+      "frame": "P2New_images_20251226_163553_RGB",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\2DGCell\\P2New_images_20251226_163553_RGB\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Nucleus_binary\\P2New_images_20251226_163553_RGB_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Nucleus_binary\\P2New_images_20251226_163553_RGB_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\2dg\\P2New_images_20251226_163553_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\run.log",
+      "pixel_counts": [
+        64012,
+        74916,
+        65380
+      ],
+      "gt_sha256": "17f1356e6601d6a061b4244bc76118b3baa16c93eb92f8f93684af67c337500f",
+      "pred_sha256": "fa533ed2a1353d192afcfb9b0d77e7061c6eda06d81b13348b56351544302076",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "2DG",
+      "frame": "P2New_images_20251226_163553_RGB",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\2DGCell\\P2New_images_20251226_163553_RGB\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Nucleolus_binary\\P2New_images_20251226_163553_RGB_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Nucleolus_binary\\P2New_images_20251226_163553_RGB_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\2dg\\P2New_images_20251226_163553_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\run.log",
+      "pixel_counts": [
+        6704,
+        7635,
+        7882
+      ],
+      "gt_sha256": "f1ab155cb72d4b8b96ebacc7b8a6de1e3b2bb1ac0e4b14bac94b933580e9fbde",
+      "pred_sha256": "7e73165ff257afd5ac215f963c9ef1caa6b6d897f86993174f6c4d0721ce6922",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "2DG",
+      "frame": "P3New_images_20251226_170333_RGB",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\2DGCell\\P3New_images_20251226_170333_RGB\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Cytoplasm_binary\\P3New_images_20251226_170333_RGB_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Cytoplasm_binary\\P3New_images_20251226_170333_RGB_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\2dg\\P3New_images_20251226_170333_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\run.log",
+      "pixel_counts": [
+        106374,
+        127319,
+        126283
+      ],
+      "gt_sha256": "a22184fd35e372fa5ea44df5f55882bae001a28f87c91db167ce11f6f5780702",
+      "pred_sha256": "e5e69e5724b99e979659e30a0437926b08baf301573af5360944406063c256b8",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "2DG",
+      "frame": "P3New_images_20251226_170333_RGB",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\2DGCell\\P3New_images_20251226_170333_RGB\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Nucleus_binary\\P3New_images_20251226_170333_RGB_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Nucleus_binary\\P3New_images_20251226_170333_RGB_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\2dg\\P3New_images_20251226_170333_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\run.log",
+      "pixel_counts": [
+        61074,
+        73031,
+        63856
+      ],
+      "gt_sha256": "4f3ac4a1a8d6b5e2381e70a402b93e0752ab2c2b4589ff94922ba8b794f0d3a7",
+      "pred_sha256": "2a1cf95841f715787ba2cbfbb80160080715bb2ebbc54231e58bfdd4ea55b0ba",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "2DG",
+      "frame": "P3New_images_20251226_170333_RGB",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\2DGCell\\P3New_images_20251226_170333_RGB\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Nucleolus_binary\\P3New_images_20251226_170333_RGB_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\FinalMasks\\Nucleolus_binary\\P3New_images_20251226_170333_RGB_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\2dg\\P3New_images_20251226_170333_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\2DGCell\\run.log",
+      "pixel_counts": [
+        5711,
+        6963,
+        7059
+      ],
+      "gt_sha256": "c0f39c8277eb2e4b034799586ec08de36c545c0dfbd8c3768ed288996fa5d785",
+      "pred_sha256": "98d379f388f3a1d55407a00f9908064945a0a3d535a70c05ef784e9e61b324e7",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "4T1",
+      "frame": "4t1_save_20260723_155148_HSV_RGB",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\4T1\\4t1_save_20260723_155148_HSV_RGB\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Cytoplasm_binary\\4t1_save_20260723_155148_HSV_RGB_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Cytoplasm_binary\\4t1_save_20260723_155148_HSV_RGB_cytoplasm.png",
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\CellOutline_results\\FinalMasks\\Cytoplasm_binary\\4t1_save_20260723_155148_HSV_RGB_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\4t1_save_20260723_155148_HSV_RGB.tif"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\run.log",
+      "pixel_counts": [
+        30561,
+        33464,
+        36592
+      ],
+      "gt_sha256": "a829f3422b6f9a64482e8892b65a602577f2268c684ed647790aa9967ab26d3e",
+      "pred_sha256": "8029e528e41c077a73f7e597f36aec4e1945ac1c4eeb4e6d11c9121477266b23",
+      "identical_file_hashes": [
+        true,
+        true
+      ]
+    },
+    {
+      "group": "4T1",
+      "frame": "4t1_save_20260723_155148_HSV_RGB",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\4T1\\4t1_save_20260723_155148_HSV_RGB\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Nucleus_binary\\4t1_save_20260723_155148_HSV_RGB_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Nucleus_binary\\4t1_save_20260723_155148_HSV_RGB_nucleus.png",
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\CellOutline_results\\FinalMasks\\Nucleus_binary\\4t1_save_20260723_155148_HSV_RGB_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\4t1_save_20260723_155148_HSV_RGB.tif"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\run.log",
+      "pixel_counts": [
+        19442,
+        24377,
+        19903
+      ],
+      "gt_sha256": "17f5255eb37b08ccf47372d182322c14c5dd48ff0f370cffde6795ecb9391b55",
+      "pred_sha256": "b8f099440b0c0ef4ae9deb8db777b2df67ad25940381a685e7781f425a0561df",
+      "identical_file_hashes": [
+        true,
+        true
+      ]
+    },
+    {
+      "group": "4T1",
+      "frame": "4t1_save_20260723_155148_HSV_RGB",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\4T1\\4t1_save_20260723_155148_HSV_RGB\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Nucleolus_binary\\4t1_save_20260723_155148_HSV_RGB_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Nucleolus_binary\\4t1_save_20260723_155148_HSV_RGB_nucleolus.png",
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\CellOutline_results\\FinalMasks\\Nucleolus_binary\\4t1_save_20260723_155148_HSV_RGB_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\4t1_save_20260723_155148_HSV_RGB.tif"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\run.log",
+      "pixel_counts": [
+        3057,
+        3736,
+        3349
+      ],
+      "gt_sha256": "0ec90e5e4592e4ffcfc2b26e6b5213a6c98af351bee9395fc9a917fbcd24dab5",
+      "pred_sha256": "8de84506a388326a5ab57da1d686c94bff9599a9cb32572a291d2f2a5cb6b3f3",
+      "identical_file_hashes": [
+        true,
+        true
+      ]
+    },
+    {
+      "group": "4T1",
+      "frame": "4t1_save_20260723_162941_HSV_RGB",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\4T1\\4t1_save_20260723_162941_HSV_RGB\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Cytoplasm_binary\\4t1_save_20260723_162941_HSV_RGB_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Cytoplasm_binary\\4t1_save_20260723_162941_HSV_RGB_cytoplasm.png",
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\CellOutline_results\\FinalMasks\\Cytoplasm_binary\\4t1_save_20260723_162941_HSV_RGB_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\4t1_save_20260723_162941_HSV_RGB.tif"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\run.log",
+      "pixel_counts": [
+        69765,
+        76848,
+        78028
+      ],
+      "gt_sha256": "709d7a33fd2a8e23dd0590614617ec80cbbb25c57e05af22271452ebabc9b562",
+      "pred_sha256": "ed5ab7109a7e63fdcd22079b65110466a66257d647d62bb9f5254581822f388a",
+      "identical_file_hashes": [
+        true,
+        true
+      ]
+    },
+    {
+      "group": "4T1",
+      "frame": "4t1_save_20260723_162941_HSV_RGB",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\4T1\\4t1_save_20260723_162941_HSV_RGB\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Nucleus_binary\\4t1_save_20260723_162941_HSV_RGB_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Nucleus_binary\\4t1_save_20260723_162941_HSV_RGB_nucleus.png",
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\CellOutline_results\\FinalMasks\\Nucleus_binary\\4t1_save_20260723_162941_HSV_RGB_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\4t1_save_20260723_162941_HSV_RGB.tif"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\run.log",
+      "pixel_counts": [
+        31096,
+        37059,
+        33129
+      ],
+      "gt_sha256": "d8d0533984c04d4f098afe032bcd0e34235bddb31a546925c5f268d05cbf880c",
+      "pred_sha256": "e897ed41c63a4df823a9d1dcdec34ea6dde0ddaa0d0c55dd3f53797906f2f901",
+      "identical_file_hashes": [
+        true,
+        true
+      ]
+    },
+    {
+      "group": "4T1",
+      "frame": "4t1_save_20260723_162941_HSV_RGB",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\4T1\\4t1_save_20260723_162941_HSV_RGB\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Nucleolus_binary\\4t1_save_20260723_162941_HSV_RGB_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Nucleolus_binary\\4t1_save_20260723_162941_HSV_RGB_nucleolus.png",
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\CellOutline_results\\FinalMasks\\Nucleolus_binary\\4t1_save_20260723_162941_HSV_RGB_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\4t1_save_20260723_162941_HSV_RGB.tif"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\run.log",
+      "pixel_counts": [
+        3608,
+        4347,
+        5110
+      ],
+      "gt_sha256": "d8953cff77b24552f4a5e4d04b9af0c5514e35e1050627de3145edfe8fdc49eb",
+      "pred_sha256": "455c0e5d6ea2894d08e914e8965ab77eafd59e6efbf4157d9f7e80d25afa5a29",
+      "identical_file_hashes": [
+        true,
+        true
+      ]
+    },
+    {
+      "group": "4T1",
+      "frame": "4t1_save_20260723_165842_HSV_RGB",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\4T1\\4t1_save_20260723_165842_HSV_RGB\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Cytoplasm_binary\\4t1_save_20260723_165842_HSV_RGB_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Cytoplasm_binary\\4t1_save_20260723_165842_HSV_RGB_cytoplasm.png",
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\CellOutline_results\\FinalMasks\\Cytoplasm_binary\\4t1_save_20260723_165842_HSV_RGB_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\4t1_save_20260723_165842_HSV_RGB.tif"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\run.log",
+      "pixel_counts": [
+        52452,
+        65322,
+        62072
+      ],
+      "gt_sha256": "9990431c147667c08ececcf66eb419577a6dabaf641094ea9e5bfe9215b430ad",
+      "pred_sha256": "6a185a101009ce21f5b18ab96dbe3dd65ebf3ec5c824bca42f06feb9d63a0691",
+      "identical_file_hashes": [
+        true,
+        true
+      ]
+    },
+    {
+      "group": "4T1",
+      "frame": "4t1_save_20260723_165842_HSV_RGB",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\4T1\\4t1_save_20260723_165842_HSV_RGB\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Nucleus_binary\\4t1_save_20260723_165842_HSV_RGB_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Nucleus_binary\\4t1_save_20260723_165842_HSV_RGB_nucleus.png",
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\CellOutline_results\\FinalMasks\\Nucleus_binary\\4t1_save_20260723_165842_HSV_RGB_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\4t1_save_20260723_165842_HSV_RGB.tif"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\run.log",
+      "pixel_counts": [
+        32542,
+        40538,
+        38892
+      ],
+      "gt_sha256": "90f6dec9491bdb8bc43981cf9287b23bd68d36b4e2017436ff6568c3de128263",
+      "pred_sha256": "21028b8db9003131d46354bc25ff16cd0c70cbade4876b7d14f85fc84b0962ac",
+      "identical_file_hashes": [
+        true,
+        true
+      ]
+    },
+    {
+      "group": "4T1",
+      "frame": "4t1_save_20260723_165842_HSV_RGB",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\4T1\\4t1_save_20260723_165842_HSV_RGB\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Nucleolus_binary\\4t1_save_20260723_165842_HSV_RGB_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Nucleolus_binary\\4t1_save_20260723_165842_HSV_RGB_nucleolus.png",
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\CellOutline_results\\FinalMasks\\Nucleolus_binary\\4t1_save_20260723_165842_HSV_RGB_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\4t1_save_20260723_165842_HSV_RGB.tif"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\run.log",
+      "pixel_counts": [
+        5073,
+        6292,
+        6085
+      ],
+      "gt_sha256": "ecb41679334faf5f4e02d4430e4280f837d95c867975eabdbfe3392a2189e661",
+      "pred_sha256": "e3d4e26ddedbb9cdb74d1614413df524b0854471536d698f89d54276afb870a1",
+      "identical_file_hashes": [
+        true,
+        true
+      ]
+    },
+    {
+      "group": "4T1",
+      "frame": "4T1_save_20260724_123502_HSV_RGB",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\4T1\\4T1_save_20260724_123502_HSV_RGB\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Cytoplasm_binary\\4T1_save_20260724_123502_HSV_RGB_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Cytoplasm_binary\\4T1_save_20260724_123502_HSV_RGB_cytoplasm.png",
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\CellOutline_results\\FinalMasks\\Cytoplasm_binary\\4T1_save_20260724_123502_HSV_RGB_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\4T1_save_20260724_123502_HSV_RGB.tif"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\run.log",
+      "pixel_counts": [
+        36279,
+        38832,
+        44307
+      ],
+      "gt_sha256": "2a9c78d18d133a07d303fdebda891805a4df758eb2bf34aeaec98f73f4d7f8fa",
+      "pred_sha256": "76e8a85110adae54e299a5173b6bc27fbfba542791c62a39d4be12259a37dc91",
+      "identical_file_hashes": [
+        true,
+        true
+      ]
+    },
+    {
+      "group": "4T1",
+      "frame": "4T1_save_20260724_123502_HSV_RGB",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\4T1\\4T1_save_20260724_123502_HSV_RGB\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Nucleus_binary\\4T1_save_20260724_123502_HSV_RGB_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Nucleus_binary\\4T1_save_20260724_123502_HSV_RGB_nucleus.png",
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\CellOutline_results\\FinalMasks\\Nucleus_binary\\4T1_save_20260724_123502_HSV_RGB_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\4T1_save_20260724_123502_HSV_RGB.tif"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\run.log",
+      "pixel_counts": [
+        27092,
+        31349,
+        27683
+      ],
+      "gt_sha256": "729a459c0021283baa72b23fc93f37f176568025b447a3c0bdb78d43c8bae319",
+      "pred_sha256": "a476aeecd4d837330038f1875d34521368369c126f1884c489fd4a3301608be4",
+      "identical_file_hashes": [
+        true,
+        true
+      ]
+    },
+    {
+      "group": "4T1",
+      "frame": "4T1_save_20260724_123502_HSV_RGB",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\4T1\\4T1_save_20260724_123502_HSV_RGB\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Nucleolus_binary\\4T1_save_20260724_123502_HSV_RGB_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Nucleolus_binary\\4T1_save_20260724_123502_HSV_RGB_nucleolus.png",
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\CellOutline_results\\FinalMasks\\Nucleolus_binary\\4T1_save_20260724_123502_HSV_RGB_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\4T1_save_20260724_123502_HSV_RGB.tif"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\run.log",
+      "pixel_counts": [
+        3193,
+        4084,
+        3537
+      ],
+      "gt_sha256": "6f4bdb7a818fc79355b41fd2e3a147b55eb19f36eae0ad6ea72f9faabff2e5e7",
+      "pred_sha256": "a2d3d0b990f9de44560e926054208368653a62ef8b894a6d4b6bf0549bbf3999",
+      "identical_file_hashes": [
+        true,
+        true
+      ]
+    },
+    {
+      "group": "4T1",
+      "frame": "4T1_save_20260724_123703_HSV_RGB",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\4T1\\4T1_save_20260724_123703_HSV_RGB\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Cytoplasm_binary\\4T1_save_20260724_123703_HSV_RGB_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Cytoplasm_binary\\4T1_save_20260724_123703_HSV_RGB_cytoplasm.png",
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\CellOutline_results\\FinalMasks\\Cytoplasm_binary\\4T1_save_20260724_123703_HSV_RGB_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\4T1_save_20260724_123703_HSV_RGB.tif"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\run.log",
+      "pixel_counts": [
+        101683,
+        115067,
+        111642
+      ],
+      "gt_sha256": "04d2bb6050f6bbc78e029e44741356489d953a988daa157b517719e332eb1a36",
+      "pred_sha256": "f562f16e32a024e7fd2e191d19088f5ac561f41184eefd447fadad360bfe7128",
+      "identical_file_hashes": [
+        true,
+        true
+      ]
+    },
+    {
+      "group": "4T1",
+      "frame": "4T1_save_20260724_123703_HSV_RGB",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\4T1\\4T1_save_20260724_123703_HSV_RGB\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Nucleus_binary\\4T1_save_20260724_123703_HSV_RGB_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Nucleus_binary\\4T1_save_20260724_123703_HSV_RGB_nucleus.png",
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\CellOutline_results\\FinalMasks\\Nucleus_binary\\4T1_save_20260724_123703_HSV_RGB_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\4T1_save_20260724_123703_HSV_RGB.tif"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\run.log",
+      "pixel_counts": [
+        48872,
+        55106,
+        53890
+      ],
+      "gt_sha256": "e8a5f2117d6def83e38aae0e3da376e393e801a6fddde803fb19601a0d2ff025",
+      "pred_sha256": "bd830ed00ef9bc4f1239fe43bc9a7676960e4f30889b4cbbf832bbdf10857ee8",
+      "identical_file_hashes": [
+        true,
+        true
+      ]
+    },
+    {
+      "group": "4T1",
+      "frame": "4T1_save_20260724_123703_HSV_RGB",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\4T1\\4T1_save_20260724_123703_HSV_RGB\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Nucleolus_binary\\4T1_save_20260724_123703_HSV_RGB_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Nucleolus_binary\\4T1_save_20260724_123703_HSV_RGB_nucleolus.png",
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\CellOutline_results\\FinalMasks\\Nucleolus_binary\\4T1_save_20260724_123703_HSV_RGB_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\4T1_save_20260724_123703_HSV_RGB.tif"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\run.log",
+      "pixel_counts": [
+        5880,
+        8237,
+        6839
+      ],
+      "gt_sha256": "76fa2025f1c66b5adf0ca50db7c4284ae60f95923b284b983b45d44968e95f76",
+      "pred_sha256": "790d0a86ec61598ac65e248b29cdea6727813cef8ac4c750e7809e9545c30bb5",
+      "identical_file_hashes": [
+        true,
+        true
+      ]
+    },
+    {
+      "group": "4T1",
+      "frame": "4T1_save_20260724_141221_HSV_RGB",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\4T1\\4T1_save_20260724_141221_HSV_RGB\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Cytoplasm_binary\\4T1_save_20260724_141221_HSV_RGB_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Cytoplasm_binary\\4T1_save_20260724_141221_HSV_RGB_cytoplasm.png",
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\CellOutline_results\\FinalMasks\\Cytoplasm_binary\\4T1_save_20260724_141221_HSV_RGB_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\4T1_save_20260724_141221_HSV_RGB.tif"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\run.log",
+      "pixel_counts": [
+        49000,
+        56291,
+        57084
+      ],
+      "gt_sha256": "4f9a7216ecaa3a6f56f5e28cdd3e100dbca215c70bad4b5b19d9a2a3eb57afa0",
+      "pred_sha256": "3846b05592453a9e65070e981824e1e9ec212fa0d2e85845cc609921a1dd535b",
+      "identical_file_hashes": [
+        true,
+        true
+      ]
+    },
+    {
+      "group": "4T1",
+      "frame": "4T1_save_20260724_141221_HSV_RGB",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\4T1\\4T1_save_20260724_141221_HSV_RGB\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Nucleus_binary\\4T1_save_20260724_141221_HSV_RGB_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Nucleus_binary\\4T1_save_20260724_141221_HSV_RGB_nucleus.png",
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\CellOutline_results\\FinalMasks\\Nucleus_binary\\4T1_save_20260724_141221_HSV_RGB_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\4T1_save_20260724_141221_HSV_RGB.tif"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\run.log",
+      "pixel_counts": [
+        35322,
+        41488,
+        38005
+      ],
+      "gt_sha256": "e3cb499755e84b043ba3b816b7a9eaea5919a79dcb9dbe2896ed75f1cc7466c2",
+      "pred_sha256": "2af71056a727fde57883a15f6a06a9a00aa090ff82974b9618d6f9053ccb28a8",
+      "identical_file_hashes": [
+        true,
+        true
+      ]
+    },
+    {
+      "group": "4T1",
+      "frame": "4T1_save_20260724_141221_HSV_RGB",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\4T1\\4T1_save_20260724_141221_HSV_RGB\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Nucleolus_binary\\4T1_save_20260724_141221_HSV_RGB_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\FinalMasks\\Nucleolus_binary\\4T1_save_20260724_141221_HSV_RGB_nucleolus.png",
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\CellOutline_results\\FinalMasks\\Nucleolus_binary\\4T1_save_20260724_141221_HSV_RGB_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\4T1\\4T1_save_20260724_141221_HSV_RGB.tif"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\4T1\\run.log",
+      "pixel_counts": [
+        6946,
+        8313,
+        7659
+      ],
+      "gt_sha256": "d05b3a0ccf154bcfd2d6541d498ea396a787f4596836dc5e0c84842a861968ee",
+      "pred_sha256": "d581cb3bf6159125f7836a37b45125553fe1bdd35d8152d635245a80b593b3a1",
+      "identical_file_hashes": [
+        true,
+        true
+      ]
+    },
+    {
+      "group": "HeLa",
+      "frame": "Hela1",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HeLa\\Hela1\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Cytoplasm_binary\\Hela1_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Cytoplasm_binary\\Hela1_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HeLa\\Hela1.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\run.log",
+      "pixel_counts": [
+        128562,
+        138769,
+        154003
+      ],
+      "gt_sha256": "e3048133458fa189750edc42ab6fee8dfd35cee34657562a267a98cc1f592a36",
+      "pred_sha256": "44242521da69596f930f8f48abc187dd35b008fd7541f8369d3c45f1f87ada6d",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HeLa",
+      "frame": "Hela1",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HeLa\\Hela1\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Nucleus_binary\\Hela1_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Nucleus_binary\\Hela1_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HeLa\\Hela1.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\run.log",
+      "pixel_counts": [
+        62142,
+        74224,
+        64318
+      ],
+      "gt_sha256": "6d829c8b0e3c4f0bb51ad550330af8da8c3a41af4a6565238407968ff9d01e51",
+      "pred_sha256": "eef9ea1cac1435f8edf63def634be5f1496c03d6d6f068ca985eb427a7db8dd4",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HeLa",
+      "frame": "Hela1",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HeLa\\Hela1\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Nucleolus_binary\\Hela1_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Nucleolus_binary\\Hela1_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HeLa\\Hela1.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\run.log",
+      "pixel_counts": [
+        8247,
+        9784,
+        9113
+      ],
+      "gt_sha256": "f4e24840468d83af279bccae73fef7b0c67ec50e00ea96041b135d82c3b4a925",
+      "pred_sha256": "b3df6d89f3daf384e1532c842f7a25eb7b8a8f28d20613a58c757c251d1135c0",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HeLa",
+      "frame": "Hela2",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HeLa\\Hela2\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Cytoplasm_binary\\Hela2_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Cytoplasm_binary\\Hela2_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HeLa\\Hela2.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\run.log",
+      "pixel_counts": [
+        112127,
+        124349,
+        131040
+      ],
+      "gt_sha256": "bbf2a4c97a8ecb41f941c9494db6621c9a658fb8b6a2bf31fbee06d1907f21aa",
+      "pred_sha256": "d99baff2bf9a5176d6ffed9abf854f7e4777c04425433e78c8c203a2b713d59e",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HeLa",
+      "frame": "Hela2",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HeLa\\Hela2\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Nucleus_binary\\Hela2_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Nucleus_binary\\Hela2_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HeLa\\Hela2.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\run.log",
+      "pixel_counts": [
+        49732,
+        63808,
+        50626
+      ],
+      "gt_sha256": "ff7a13011ecc19539844d26a4eb16d7c5f4eb17adf86f5000af996b0f603c0e4",
+      "pred_sha256": "2ea66dd284a55235edddee0a93985bb61fab12cb874a3e61e2fcffbbc1777d61",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HeLa",
+      "frame": "Hela2",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HeLa\\Hela2\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Nucleolus_binary\\Hela2_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Nucleolus_binary\\Hela2_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HeLa\\Hela2.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\run.log",
+      "pixel_counts": [
+        6173,
+        7435,
+        6556
+      ],
+      "gt_sha256": "db888d57c481e4eaa67f475342a2c95cf138bdd3162c1835d189f412587f3955",
+      "pred_sha256": "4b7af963893b50c1accc5d07581f7c68dd6adada428b897715fbe59b3bb7aa46",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HeLa",
+      "frame": "Hela3",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HeLa\\Hela3\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Cytoplasm_binary\\Hela3_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Cytoplasm_binary\\Hela3_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HeLa\\Hela3.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\run.log",
+      "pixel_counts": [
+        81248,
+        102044,
+        97760
+      ],
+      "gt_sha256": "567e71eba87334fe7491fe87e636d6dbb870500793ea588d1c53970c2580839e",
+      "pred_sha256": "ac30abb7c01d89f7400f86a7e4bbd468a602eaa8517ef8b8e61eb1b9cf954e89",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HeLa",
+      "frame": "Hela3",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HeLa\\Hela3\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Nucleus_binary\\Hela3_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Nucleus_binary\\Hela3_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HeLa\\Hela3.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\run.log",
+      "pixel_counts": [
+        41492,
+        48397,
+        51271
+      ],
+      "gt_sha256": "c27d740c59bec49065a42b316f303d5c82c4051a106122bb10d0203e22393a50",
+      "pred_sha256": "f19d6f9c6a41a358fd736d227b0e75df2aabc3417756cf6538e35ba6f62907e7",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HeLa",
+      "frame": "Hela3",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HeLa\\Hela3\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Nucleolus_binary\\Hela3_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Nucleolus_binary\\Hela3_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HeLa\\Hela3.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\run.log",
+      "pixel_counts": [
+        5839,
+        7217,
+        6613
+      ],
+      "gt_sha256": "abf6783fb14402c5e4e2d7acf70326318befe1d17d2d75917add05f33e10a876",
+      "pred_sha256": "49332fa954762151b4ab18bd9b36a718791309ed2c9a06b143cd1525a7003199",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HeLa",
+      "frame": "Hela4",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HeLa\\Hela4\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Cytoplasm_binary\\Hela4_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Cytoplasm_binary\\Hela4_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HeLa\\Hela4.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\run.log",
+      "pixel_counts": [
+        83730,
+        111084,
+        96571
+      ],
+      "gt_sha256": "3189f466005e8ee4e045e98c02429675a46b101fd08500c9931656252117b218",
+      "pred_sha256": "6c689146cc07e4467b190133c887b7e0f4f90973e454a26c9304bab0b7569702",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HeLa",
+      "frame": "Hela4",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HeLa\\Hela4\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Nucleus_binary\\Hela4_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Nucleus_binary\\Hela4_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HeLa\\Hela4.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\run.log",
+      "pixel_counts": [
+        36214,
+        44068,
+        45902
+      ],
+      "gt_sha256": "d5b8666770f3828ea343cbd0dfc45157614bf8aa64d244ca5a544010d5e1df0a",
+      "pred_sha256": "3d3aa269c9428872c6d5951464e9371e0f61557c46c4d59ed578749c43d714a0",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HeLa",
+      "frame": "Hela4",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HeLa\\Hela4\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Nucleolus_binary\\Hela4_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Nucleolus_binary\\Hela4_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HeLa\\Hela4.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\run.log",
+      "pixel_counts": [
+        4958,
+        6518,
+        5478
+      ],
+      "gt_sha256": "a1e6630782a805eb11eef46caf7fd1352b23949283e8b77c2b286736d7d4af18",
+      "pred_sha256": "e199f332ac3a86cb29cf20c666b777c5d3ece26e0f78c1a8b2a9ac25dda306eb",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HeLa",
+      "frame": "Hela5",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HeLa\\Hela5\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Cytoplasm_binary\\Hela5_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Cytoplasm_binary\\Hela5_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HeLa\\Hela5.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\run.log",
+      "pixel_counts": [
+        86426,
+        101117,
+        97205
+      ],
+      "gt_sha256": "b2a9c75973598618f3843021828976732d1d2408ed63481b7b160bad0e88f2aa",
+      "pred_sha256": "bc28746e459fbc47a038693073e8e62d0cabc4f5a32bd133c511bd8aea750cc4",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HeLa",
+      "frame": "Hela5",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HeLa\\Hela5\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Nucleus_binary\\Hela5_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Nucleus_binary\\Hela5_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HeLa\\Hela5.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\run.log",
+      "pixel_counts": [
+        39481,
+        43693,
+        47124
+      ],
+      "gt_sha256": "a7c01e61bf9c37bd1cdac50ff131fc41caa59150a2ff7f7cc3b9e2462e6f23a6",
+      "pred_sha256": "64a482592cb2d2e5c4f5688531a1a1e22e358095ba73ab65b56f631b6d318db2",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HeLa",
+      "frame": "Hela5",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HeLa\\Hela5\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Nucleolus_binary\\Hela5_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Nucleolus_binary\\Hela5_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HeLa\\Hela5.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\run.log",
+      "pixel_counts": [
+        5333,
+        6479,
+        5821
+      ],
+      "gt_sha256": "df1e184ad2c77bf634b69ccd28276b0e0b58bcb6915a8de4df01ebee0b46308f",
+      "pred_sha256": "4f93a9594f526b5b5ec230f0bd7164df3152a555b6e7345281cc634611804520",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HeLa",
+      "frame": "Hela6",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HeLa\\Hela6\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Cytoplasm_binary\\Hela6_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Cytoplasm_binary\\Hela6_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HeLa\\Hela6.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\run.log",
+      "pixel_counts": [
+        122490,
+        141868,
+        136813
+      ],
+      "gt_sha256": "3e5cedbda88421802ab81078008926101ae3728b805f358cb3ef4fc89afa844d",
+      "pred_sha256": "e86f40ce23c5a5475132ec2bdb05a05e784053194cd4b885fe58f95062252e02",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HeLa",
+      "frame": "Hela6",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HeLa\\Hela6\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Nucleus_binary\\Hela6_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Nucleus_binary\\Hela6_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HeLa\\Hela6.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\run.log",
+      "pixel_counts": [
+        68558,
+        79958,
+        70392
+      ],
+      "gt_sha256": "44436ff7109d45f13ed2eb27e412632a10a74b3d2afef0f83f1090b7e7b7aaf7",
+      "pred_sha256": "310652f0219fa34a17ab90e2c67b5b56e8af351be3bc4bff1823c75d34b6d349",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HeLa",
+      "frame": "Hela6",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HeLa\\Hela6\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Nucleolus_binary\\Hela6_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Nucleolus_binary\\Hela6_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HeLa\\Hela6.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\run.log",
+      "pixel_counts": [
+        9690,
+        12259,
+        10315
+      ],
+      "gt_sha256": "04a0270d1a27de31d2a7134de6ab3a4c435951727a552925fc550328032e5ba9",
+      "pred_sha256": "c8caeb7a723dd668c0f70a3d5f7241b5120c1414da7637c4940891ff1655bc6b",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HeLa",
+      "frame": "Hela7",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HeLa\\Hela7\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Cytoplasm_binary\\Hela7_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Cytoplasm_binary\\Hela7_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HeLa\\Hela7.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\run.log",
+      "pixel_counts": [
+        53023,
+        61911,
+        59303
+      ],
+      "gt_sha256": "9831b5972c49235ff48bebf9de7d5f3edd578f9ce2ab28dc704d53ccb97cf57d",
+      "pred_sha256": "cd83582ee12f41b3783f1c16444cd6c40ba521b48ec53d59b3ad340a497bf447",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HeLa",
+      "frame": "Hela7",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HeLa\\Hela7\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Nucleus_binary\\Hela7_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Nucleus_binary\\Hela7_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HeLa\\Hela7.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\run.log",
+      "pixel_counts": [
+        27945,
+        33689,
+        28284
+      ],
+      "gt_sha256": "302c5915aa26876ded685d5dd62c2e8b7ad464a47df014d9a9ea51487ae88bd9",
+      "pred_sha256": "d5a81c8193fe87d4d272eda872534d47d6c8a44c57bc3cd0ec5784acc8529520",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HeLa",
+      "frame": "Hela7",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HeLa\\Hela7\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Nucleolus_binary\\Hela7_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\FinalMasks\\Nucleolus_binary\\Hela7_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HeLa\\Hela7.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HeLa\\run.log",
+      "pixel_counts": [
+        4187,
+        5282,
+        4590
+      ],
+      "gt_sha256": "8735b42292f29068ddc4200a3625d4b147573ab2203bbfbc5b20c72dc5919937",
+      "pred_sha256": "09bc8258ccbae128d6fe60694ac95fa2b4163572825ca181b10df3a1b21fc878",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HepG2",
+      "frame": "HeG2p_images_20251207_163322_RGB",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HePG2\\HePG2Cells\\HeG2p_images_20251207_163322_RGB\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Cytoplasm_binary\\HeG2p_images_20251207_163322_RGB_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Cytoplasm_binary\\HeG2p_images_20251207_163322_RGB_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HePG2\\HeG2p_images_20251207_163322_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\run.log",
+      "pixel_counts": [
+        49955,
+        53251,
+        59487
+      ],
+      "gt_sha256": "70fa9f26b66320af1c5cb19f47e14c94b5e90198f27c51c13de83a80a1591316",
+      "pred_sha256": "764ae3f47e59c811d806b0e9d9709371d5aa65e60f38d7cc6901f76d2bcd6e4d",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HepG2",
+      "frame": "HeG2p_images_20251207_163322_RGB",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HePG2\\HePG2Cells\\HeG2p_images_20251207_163322_RGB\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Nucleus_binary\\HeG2p_images_20251207_163322_RGB_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Nucleus_binary\\HeG2p_images_20251207_163322_RGB_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HePG2\\HeG2p_images_20251207_163322_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\run.log",
+      "pixel_counts": [
+        17892,
+        21475,
+        19512
+      ],
+      "gt_sha256": "708ad9680545a308cd2cbb2b9a6024e5c72a77dfb4e55131026b04e2405e6f24",
+      "pred_sha256": "fccecac2c669e07f06acee9124959ee6da4161b3cd424ba0050e735bf224771c",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HepG2",
+      "frame": "HeG2p_images_20251207_163322_RGB",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HePG2\\HePG2Cells\\HeG2p_images_20251207_163322_RGB\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Nucleolus_binary\\HeG2p_images_20251207_163322_RGB_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Nucleolus_binary\\HeG2p_images_20251207_163322_RGB_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HePG2\\HeG2p_images_20251207_163322_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\run.log",
+      "pixel_counts": [
+        1936,
+        2399,
+        2149
+      ],
+      "gt_sha256": "02db1855bbe577ad45c0e2fabf60e1e752ca86d7fc558312345cb91a2dcfcea9",
+      "pred_sha256": "4930e3c6bf88a4826a3a0f545c2c831598196ed0cf31a0ec3fb80148d7cd06b8",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HepG2",
+      "frame": "HeG2pZ2-1UM_images_20251207_170439_RGB",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HePG2\\HePG2Cells\\HeG2pZ2-1UM_images_20251207_170439_RGB\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Cytoplasm_binary\\HeG2pZ2-1UM_images_20251207_170439_RGB_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Cytoplasm_binary\\HeG2pZ2-1UM_images_20251207_170439_RGB_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HePG2\\HeG2pZ2-1UM_images_20251207_170439_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\run.log",
+      "pixel_counts": [
+        62132,
+        65223,
+        75504
+      ],
+      "gt_sha256": "aaf9918cf241e34d026d53666e7f458625777385542cc0c352c50b6ef1f9c778",
+      "pred_sha256": "b34a68d36e36f91d20e1281b07a39109fc5cf82ade4f68fbe9fe88b9b13e5172",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HepG2",
+      "frame": "HeG2pZ2-1UM_images_20251207_170439_RGB",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HePG2\\HePG2Cells\\HeG2pZ2-1UM_images_20251207_170439_RGB\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Nucleus_binary\\HeG2pZ2-1UM_images_20251207_170439_RGB_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Nucleus_binary\\HeG2pZ2-1UM_images_20251207_170439_RGB_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HePG2\\HeG2pZ2-1UM_images_20251207_170439_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\run.log",
+      "pixel_counts": [
+        27150,
+        32394,
+        29500
+      ],
+      "gt_sha256": "d24889d9b1bbe5798bdb284d1d45827d7dabf94809422f44eb1a35be39c8dfea",
+      "pred_sha256": "b5aca3135c96ef8f787e09562a15bb32d26006e9442e1b267175b29e83be54b8",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HepG2",
+      "frame": "HeG2pZ2-1UM_images_20251207_170439_RGB",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HePG2\\HePG2Cells\\HeG2pZ2-1UM_images_20251207_170439_RGB\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Nucleolus_binary\\HeG2pZ2-1UM_images_20251207_170439_RGB_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Nucleolus_binary\\HeG2pZ2-1UM_images_20251207_170439_RGB_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HePG2\\HeG2pZ2-1UM_images_20251207_170439_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\run.log",
+      "pixel_counts": [
+        2557,
+        3107,
+        3075
+      ],
+      "gt_sha256": "eec3aee409ccd9a2c1eeaced1af5c62b27583a9d2b64e6d47c169b0dfc050d2c",
+      "pred_sha256": "66f230b980a9ba96f3bbee804f86f52df8e8114040e3c8f05f8fe46142a67b7d",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HepG2",
+      "frame": "HepG2-2_images_20251217_105011_RGB",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HePG2\\HePG2Cells\\HepG2-2_images_20251217_105011_RGB\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Cytoplasm_binary\\HepG2-2_images_20251217_105011_RGB_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Cytoplasm_binary\\HepG2-2_images_20251217_105011_RGB_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HePG2\\HepG2-2_images_20251217_105011_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\run.log",
+      "pixel_counts": [
+        97609,
+        106381,
+        111875
+      ],
+      "gt_sha256": "4a0f13a987c3101745e0eb6f66536b7f1128195f90fb11a1b3b3924761f98add",
+      "pred_sha256": "ebee22e53b8666d3800149fd624121f5b64c4a516f846eecee122ac6856debbc",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HepG2",
+      "frame": "HepG2-2_images_20251217_105011_RGB",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HePG2\\HePG2Cells\\HepG2-2_images_20251217_105011_RGB\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Nucleus_binary\\HepG2-2_images_20251217_105011_RGB_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Nucleus_binary\\HepG2-2_images_20251217_105011_RGB_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HePG2\\HepG2-2_images_20251217_105011_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\run.log",
+      "pixel_counts": [
+        55978,
+        62446,
+        60280
+      ],
+      "gt_sha256": "51e0c147ba5f17a389340eb9980791dc9e96a31cd7563c3609ffca80363be76b",
+      "pred_sha256": "4c19ac20f944310239b42b1aa60f1c0728e818472e54a753d7a192207240e19d",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HepG2",
+      "frame": "HepG2-2_images_20251217_105011_RGB",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HePG2\\HePG2Cells\\HepG2-2_images_20251217_105011_RGB\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Nucleolus_binary\\HepG2-2_images_20251217_105011_RGB_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Nucleolus_binary\\HepG2-2_images_20251217_105011_RGB_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HePG2\\HepG2-2_images_20251217_105011_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\run.log",
+      "pixel_counts": [
+        4285,
+        4880,
+        5395
+      ],
+      "gt_sha256": "2800ca47654be3ab129eb6f307c8ad233d34db56d21a6a576c0d72fa324a9c39",
+      "pred_sha256": "ff3e440fb4fbd71413c58f0bf7d6a30b5b313e62b2aa49af2da7525e190f8b9d",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HepG2",
+      "frame": "P3Before2DG_images_20251226_153335_RGB",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HePG2\\HePG2Cells\\P3Before2DG_images_20251226_153335_RGB\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Cytoplasm_binary\\P3Before2DG_images_20251226_153335_RGB_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Cytoplasm_binary\\P3Before2DG_images_20251226_153335_RGB_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HePG2\\P3Before2DG_images_20251226_153335_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\run.log",
+      "pixel_counts": [
+        110129,
+        120237,
+        133219
+      ],
+      "gt_sha256": "42ea97bafe45a661ddf7e8b06846710cac808149bdcaf26081a1f4f1d0236db0",
+      "pred_sha256": "cb74d648dc11fbd5b9eb250bc13a310a91e5b1e0d7438cedb5bf8d0e5f8526b2",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HepG2",
+      "frame": "P3Before2DG_images_20251226_153335_RGB",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HePG2\\HePG2Cells\\P3Before2DG_images_20251226_153335_RGB\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Nucleus_binary\\P3Before2DG_images_20251226_153335_RGB_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Nucleus_binary\\P3Before2DG_images_20251226_153335_RGB_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HePG2\\P3Before2DG_images_20251226_153335_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\run.log",
+      "pixel_counts": [
+        39955,
+        48417,
+        47300
+      ],
+      "gt_sha256": "62defeed009d14514f1673174f3cddddbf4979bd75ad80c3f3162062009ff687",
+      "pred_sha256": "e5402e525c5fae227849cd75a1afb4bb59dd8da9297b4fe15da0a995df10c62f",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HepG2",
+      "frame": "P3Before2DG_images_20251226_153335_RGB",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HePG2\\HePG2Cells\\P3Before2DG_images_20251226_153335_RGB\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Nucleolus_binary\\P3Before2DG_images_20251226_153335_RGB_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Nucleolus_binary\\P3Before2DG_images_20251226_153335_RGB_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HePG2\\P3Before2DG_images_20251226_153335_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\run.log",
+      "pixel_counts": [
+        5261,
+        6546,
+        7223
+      ],
+      "gt_sha256": "69cfe9de7133c0dc78b1881eafa804f0a3d07fd3430d6f8e2de0167fc6daad7a",
+      "pred_sha256": "543c7acb7cc2cc6e63d9e759294a0f933cacc18c274a57c2d73c3294987e7488",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HepG2",
+      "frame": "P4Before2DG_images_20251226_153445_RGB",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HePG2\\HePG2Cells\\P4Before2DG_images_20251226_153445_RGB\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Cytoplasm_binary\\P4Before2DG_images_20251226_153445_RGB_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Cytoplasm_binary\\P4Before2DG_images_20251226_153445_RGB_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HePG2\\P4Before2DG_images_20251226_153445_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\run.log",
+      "pixel_counts": [
+        74753,
+        80499,
+        88498
+      ],
+      "gt_sha256": "297ea8abdbbd59ae918f9085104b9483403afc71bde0d946d5b1e29d230e4869",
+      "pred_sha256": "856d905d46c73fa07068efc11547317bde57b6a2193ddff6081ea6f8b7a7e3e8",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HepG2",
+      "frame": "P4Before2DG_images_20251226_153445_RGB",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HePG2\\HePG2Cells\\P4Before2DG_images_20251226_153445_RGB\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Nucleus_binary\\P4Before2DG_images_20251226_153445_RGB_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Nucleus_binary\\P4Before2DG_images_20251226_153445_RGB_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HePG2\\P4Before2DG_images_20251226_153445_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\run.log",
+      "pixel_counts": [
+        26971,
+        30555,
+        30242
+      ],
+      "gt_sha256": "01492ee206e4899a98116cfe7ab39ca8e7cad98377440fbd7be5534a75f87a67",
+      "pred_sha256": "b3ee04715838163313d2f75303df0f36b919146f3534f19145552d9add9a1a17",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "HepG2",
+      "frame": "P4Before2DG_images_20251226_153445_RGB",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\HePG2\\HePG2Cells\\P4Before2DG_images_20251226_153445_RGB\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Nucleolus_binary\\P4Before2DG_images_20251226_153445_RGB_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\FinalMasks\\Nucleolus_binary\\P4Before2DG_images_20251226_153445_RGB_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\HePG2\\P4Before2DG_images_20251226_153445_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\HePG2\\run.log",
+      "pixel_counts": [
+        3046,
+        3812,
+        3790
+      ],
+      "gt_sha256": "75bdfd38d7709fa4fff8ea090f6a56e4d1050b5f32699ac4dbc49b80f00db8ea",
+      "pred_sha256": "b10ffdfbe3298355e5b10df904bea948fe67cd4fc0ff328e2a7fe44b2bb09dd9",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "OA",
+      "frame": "Newcell3_images_20251019_234707_RGB",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\OA\\OA\\Newcell3_images_20251019_234707_RGB\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Cytoplasm_binary\\Newcell3_images_20251019_234707_RGB_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Cytoplasm_binary\\Newcell3_images_20251019_234707_RGB_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\OA\\Newcell3_images_20251019_234707_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\run.log",
+      "pixel_counts": [
+        64309,
+        71305,
+        75264
+      ],
+      "gt_sha256": "3759433a2714765ee47ee2f6a38a7d8024bcebed229b7744f894b981b01ed72f",
+      "pred_sha256": "47abf7bcc7d4b598caefa8bcae2a1a6834fe70cab5b2ac4395d0b1858b5c6efb",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "OA",
+      "frame": "Newcell3_images_20251019_234707_RGB",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\OA\\OA\\Newcell3_images_20251019_234707_RGB\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Nucleus_binary\\Newcell3_images_20251019_234707_RGB_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Nucleus_binary\\Newcell3_images_20251019_234707_RGB_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\OA\\Newcell3_images_20251019_234707_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\run.log",
+      "pixel_counts": [
+        38662,
+        44893,
+        39696
+      ],
+      "gt_sha256": "691e923214ba5d1336b38ce5852a90b71805fb86529f6dfd646a437ed210cc83",
+      "pred_sha256": "a3d7d38d0ea92b684901772bc6b9854fa07b0634d0d66261c4eb46f45c87221a",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "OA",
+      "frame": "Newcell3_images_20251019_234707_RGB",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\OA\\OA\\Newcell3_images_20251019_234707_RGB\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Nucleolus_binary\\Newcell3_images_20251019_234707_RGB_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Nucleolus_binary\\Newcell3_images_20251019_234707_RGB_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\OA\\Newcell3_images_20251019_234707_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\run.log",
+      "pixel_counts": [
+        4113,
+        5146,
+        4617
+      ],
+      "gt_sha256": "cbafcb89f74912d58f2442287f88998f71fc7212b3b1bdb5b867c98f5a462366",
+      "pred_sha256": "4c01e1c0558a2387d9a8f385db363d60004638f097f89f74956e522b4841f1f2",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "OA",
+      "frame": "OA2FOV2_images_20251215_211817_RGB",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\OA\\OA\\OA2FOV2_images_20251215_211817_RGB\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Cytoplasm_binary\\OA2FOV2_images_20251215_211817_RGB_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Cytoplasm_binary\\OA2FOV2_images_20251215_211817_RGB_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\OA\\OA2FOV2_images_20251215_211817_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\run.log",
+      "pixel_counts": [
+        137562,
+        152791,
+        167293
+      ],
+      "gt_sha256": "1316a8a2df7b0c9b647f7834c1b5e35b56c4225da0467503c93dfa0f1ea50e29",
+      "pred_sha256": "e32842a0e5a3acab7c0b5e2ba48b0622349cd3911df0418d1ce421c54684079b",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "OA",
+      "frame": "OA2FOV2_images_20251215_211817_RGB",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\OA\\OA\\OA2FOV2_images_20251215_211817_RGB\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Nucleus_binary\\OA2FOV2_images_20251215_211817_RGB_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Nucleus_binary\\OA2FOV2_images_20251215_211817_RGB_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\OA\\OA2FOV2_images_20251215_211817_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\run.log",
+      "pixel_counts": [
+        55279,
+        70162,
+        62714
+      ],
+      "gt_sha256": "78c56698c0caf53e8a26085b0ef5d4685fc664f2042c2a09bb2e8049035b7c3b",
+      "pred_sha256": "5c03c66edb400ef420bdf0a4f9d0eccece8e8600e5fd6797c7ddc5cc231e1eac",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "OA",
+      "frame": "OA2FOV2_images_20251215_211817_RGB",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\OA\\OA\\OA2FOV2_images_20251215_211817_RGB\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Nucleolus_binary\\OA2FOV2_images_20251215_211817_RGB_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Nucleolus_binary\\OA2FOV2_images_20251215_211817_RGB_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\OA\\OA2FOV2_images_20251215_211817_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\run.log",
+      "pixel_counts": [
+        6871,
+        8528,
+        8532
+      ],
+      "gt_sha256": "9eedffb58676266a8cba4d6d8027973d10a646483734d894fe62ff8056c61762",
+      "pred_sha256": "9c7479f5d19192e4d5efbe1fb899576ae62540ed2542c6f2bb4b81095fd5a6af",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "OA",
+      "frame": "OA2FOV2_images_20251215_211925_RGB",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\OA\\OA\\OA2FOV2_images_20251215_211925_RGB\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Cytoplasm_binary\\OA2FOV2_images_20251215_211925_RGB_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Cytoplasm_binary\\OA2FOV2_images_20251215_211925_RGB_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\OA\\OA2FOV2_images_20251215_211925_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\run.log",
+      "pixel_counts": [
+        137755,
+        155974,
+        171475
+      ],
+      "gt_sha256": "c7b7398d278a330988a765d1d41485f66d45ee4f88330548bb95c480d5c52583",
+      "pred_sha256": "a47d27c0fc57f3f55ab5b0c4a3f893ea6a6179092667ce4fd719a5f657604378",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "OA",
+      "frame": "OA2FOV2_images_20251215_211925_RGB",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\OA\\OA\\OA2FOV2_images_20251215_211925_RGB\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Nucleus_binary\\OA2FOV2_images_20251215_211925_RGB_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Nucleus_binary\\OA2FOV2_images_20251215_211925_RGB_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\OA\\OA2FOV2_images_20251215_211925_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\run.log",
+      "pixel_counts": [
+        54399,
+        70298,
+        58899
+      ],
+      "gt_sha256": "0aeb916a5735172eb874b1ee3cc22b9176afe8a05fcc83ec83c8def5c0148120",
+      "pred_sha256": "f8b504782b694ec27b3aa6cbbd65a975df73acceaad470e3a999e212b0ec2bb8",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "OA",
+      "frame": "OA2FOV2_images_20251215_211925_RGB",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\OA\\OA\\OA2FOV2_images_20251215_211925_RGB\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Nucleolus_binary\\OA2FOV2_images_20251215_211925_RGB_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Nucleolus_binary\\OA2FOV2_images_20251215_211925_RGB_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\OA\\OA2FOV2_images_20251215_211925_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\run.log",
+      "pixel_counts": [
+        7876,
+        9022,
+        9608
+      ],
+      "gt_sha256": "0f95b4321c32476401e3b9a9eb0ca717621906047ec5b7f4a0cd7461953b8ef5",
+      "pred_sha256": "51d356a9437356b2ab0cdc6a2d726f1c83e6962450a67a809dfc3aeb1a780a1f",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "OA",
+      "frame": "OA2FOV2_images_20251215_211939_RGB",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\OA\\OA\\OA2FOV2_images_20251215_211939_RGB\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Cytoplasm_binary\\OA2FOV2_images_20251215_211939_RGB_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Cytoplasm_binary\\OA2FOV2_images_20251215_211939_RGB_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\OA\\OA2FOV2_images_20251215_211939_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\run.log",
+      "pixel_counts": [
+        146178,
+        159855,
+        168603
+      ],
+      "gt_sha256": "6cf01a1bdf0fdea14ec9b4785c783f1c6c3e9033f4da6f06eb266a60f3d9b481",
+      "pred_sha256": "9615c55d7bfa44d1f1c596b8928526b0f2f077794294d5c98e9e78c36f4e99ed",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "OA",
+      "frame": "OA2FOV2_images_20251215_211939_RGB",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\OA\\OA\\OA2FOV2_images_20251215_211939_RGB\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Nucleus_binary\\OA2FOV2_images_20251215_211939_RGB_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Nucleus_binary\\OA2FOV2_images_20251215_211939_RGB_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\OA\\OA2FOV2_images_20251215_211939_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\run.log",
+      "pixel_counts": [
+        56968,
+        66865,
+        61499
+      ],
+      "gt_sha256": "cb67985a30a157733df25f5ce94a360120f95e72e77727809d5397ef1f0b9aa0",
+      "pred_sha256": "a133b8268e77714f40024dcf687b442dcc53eeced1f47232d4859e06dd97006a",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "OA",
+      "frame": "OA2FOV2_images_20251215_211939_RGB",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\OA\\OA\\OA2FOV2_images_20251215_211939_RGB\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Nucleolus_binary\\OA2FOV2_images_20251215_211939_RGB_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Nucleolus_binary\\OA2FOV2_images_20251215_211939_RGB_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\OA\\OA2FOV2_images_20251215_211939_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\run.log",
+      "pixel_counts": [
+        8056,
+        9088,
+        9806
+      ],
+      "gt_sha256": "d71a53216dc41c02fdd91a4c6439978d48af8c30465c3816772b659c16e8ac92",
+      "pred_sha256": "f1a017c07b05a51fac7e1d987d4369428f3645ff7f4e0929accb4cd18b44681e",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "OA",
+      "frame": "OA9LongTime_images_20250925_225313_RGB",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\OA\\OA\\OA9LongTime_images_20250925_225313_RGB\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Cytoplasm_binary\\OA9LongTime_images_20250925_225313_RGB_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Cytoplasm_binary\\OA9LongTime_images_20250925_225313_RGB_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\OA\\OA9LongTime_images_20250925_225313_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\run.log",
+      "pixel_counts": [
+        81270,
+        92186,
+        97160
+      ],
+      "gt_sha256": "bdddb7336bb310ad5c753c021368f3b2800f3df795844183bd9f646c12af2462",
+      "pred_sha256": "a7864d5adf3f73fc9e24f34f1ed5f2e3f3fbb99b080ff67c4c56ce8548a86090",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "OA",
+      "frame": "OA9LongTime_images_20250925_225313_RGB",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\OA\\OA\\OA9LongTime_images_20250925_225313_RGB\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Nucleus_binary\\OA9LongTime_images_20250925_225313_RGB_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Nucleus_binary\\OA9LongTime_images_20250925_225313_RGB_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\OA\\OA9LongTime_images_20250925_225313_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\run.log",
+      "pixel_counts": [
+        52516,
+        64070,
+        54856
+      ],
+      "gt_sha256": "a8785a4735a1e756a45eff57b182e82b3e121d2c1f88183fdc231270950c93b1",
+      "pred_sha256": "d6506869a36667c3f1019fd167ce61b9a48b9a10db73d520dc08a1e07b268e38",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "OA",
+      "frame": "OA9LongTime_images_20250925_225313_RGB",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\OA\\OA\\OA9LongTime_images_20250925_225313_RGB\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Nucleolus_binary\\OA9LongTime_images_20250925_225313_RGB_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Nucleolus_binary\\OA9LongTime_images_20250925_225313_RGB_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\OA\\OA9LongTime_images_20250925_225313_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\run.log",
+      "pixel_counts": [
+        4860,
+        5598,
+        5617
+      ],
+      "gt_sha256": "8fff35335bc5c1e6b9ee6322d3643cc0ac40170c201fe7b185540fcafa420143",
+      "pred_sha256": "7ee7deddb231828febbac716b27a8ba8743ff210622551fa70661f11933b7a17",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "OA",
+      "frame": "OAcellsLFOV3_images_20251113_220216_RGB",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\OA\\OA\\OAcellsLFOV3_images_20251113_220216_RGB\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Cytoplasm_binary\\OAcellsLFOV3_images_20251113_220216_RGB_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Cytoplasm_binary\\OAcellsLFOV3_images_20251113_220216_RGB_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\OA\\OAcellsLFOV3_images_20251113_220216_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\run.log",
+      "pixel_counts": [
+        120768,
+        168166,
+        148054
+      ],
+      "gt_sha256": "155493c919100b11216ebca90797a071b34596225461af6d53ba85d306a34d00",
+      "pred_sha256": "37d6cf841305a673aa4383c6b18105022ad7c0a2ce4338fc3dfd3641743641a7",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "OA",
+      "frame": "OAcellsLFOV3_images_20251113_220216_RGB",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\OA\\OA\\OAcellsLFOV3_images_20251113_220216_RGB\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Nucleus_binary\\OAcellsLFOV3_images_20251113_220216_RGB_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Nucleus_binary\\OAcellsLFOV3_images_20251113_220216_RGB_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\OA\\OAcellsLFOV3_images_20251113_220216_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\run.log",
+      "pixel_counts": [
+        54858,
+        68611,
+        61447
+      ],
+      "gt_sha256": "64b4b62dae7eb5f8238100ac4095641b81b9ed7ea86b882ede6a9df23c10a010",
+      "pred_sha256": "23a44c14211b69a8d6b200859d766109fa7a62acce4ba001d1249891257f6128",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "OA",
+      "frame": "OAcellsLFOV3_images_20251113_220216_RGB",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\OA\\OA\\OAcellsLFOV3_images_20251113_220216_RGB\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Nucleolus_binary\\OAcellsLFOV3_images_20251113_220216_RGB_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Nucleolus_binary\\OAcellsLFOV3_images_20251113_220216_RGB_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\OA\\OAcellsLFOV3_images_20251113_220216_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\run.log",
+      "pixel_counts": [
+        8451,
+        9898,
+        10563
+      ],
+      "gt_sha256": "a203f63e8203a61e3b811fa1fd6913b90dab1ed985f27a06614073e007ef60cc",
+      "pred_sha256": "ff8328117eb9a281e8b27f7fce69b749549f05012be8960ffefe291b632fbe69",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "OA",
+      "frame": "OALT_images_20251215_220054_RGB",
+      "compartment": "cytoplasm",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\OA\\OA\\OALT_images_20251215_220054_RGB\\cytoplasm_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Cytoplasm_binary\\OALT_images_20251215_220054_RGB_cytoplasm.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Cytoplasm_binary\\OALT_images_20251215_220054_RGB_cytoplasm.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\OA\\OALT_images_20251215_220054_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\run.log",
+      "pixel_counts": [
+        89545,
+        97006,
+        100827
+      ],
+      "gt_sha256": "f33d6d983e868da5169f561250aa9998f02d0b1e12730cf3f9050e0a6bd0f523",
+      "pred_sha256": "52aa136452382dacc850349ac9ef47b6a280eb47fe285c5d402e35e007af5ad4",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "OA",
+      "frame": "OALT_images_20251215_220054_RGB",
+      "compartment": "nucleus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\OA\\OA\\OALT_images_20251215_220054_RGB\\nucleus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Nucleus_binary\\OALT_images_20251215_220054_RGB_nucleus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Nucleus_binary\\OALT_images_20251215_220054_RGB_nucleus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\OA\\OALT_images_20251215_220054_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\run.log",
+      "pixel_counts": [
+        26719,
+        33145,
+        28901
+      ],
+      "gt_sha256": "d0278f5cfcf40e5b86d797fd48685ead5647d42411daa6ad28571165bf641146",
+      "pred_sha256": "1cc8ef7464adb2c5ad0d8e93f2eeb1c416821446e1bde5e74854b0f41dbda5df",
+      "identical_file_hashes": [
+        true
+      ]
+    },
+    {
+      "group": "OA",
+      "frame": "OALT_images_20251215_220054_RGB",
+      "compartment": "nucleolus",
+      "evaluation_gt": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Manually Annotated Results\\OA\\OA\\OALT_images_20251215_220054_RGB\\nucleolus_labels.png",
+      "evaluation_prediction": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Nucleolus_binary\\OALT_images_20251215_220054_RGB_nucleolus.png",
+      "archived_predictions": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\FinalMasks\\Nucleolus_binary\\OALT_images_20251215_220054_RGB_nucleolus.png"
+      ],
+      "input_images": [
+        "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\Cell segment\\OA\\OALT_images_20251215_220054_RGB.png"
+      ],
+      "run_log": "C:\\Users\\liron\\OneDrive - National University of Singapore\\Desktop\\Cell Segmentation\\To Evaluate\\Predicted Results\\OA\\run.log",
+      "pixel_counts": [
+        2848,
+        3328,
+        3303
+      ],
+      "gt_sha256": "01ef15dadde1bff5d5f845e60bf01ecf7a2240eb417b9fb5b26da7b5483d42ba",
+      "pred_sha256": "fdaafd6ac669e3c8726b49885fa661d76e905978348a49c2ca03f27bcaff52bf",
+      "identical_file_hashes": [
+        true
+      ]
+    }
+  ]
+}
