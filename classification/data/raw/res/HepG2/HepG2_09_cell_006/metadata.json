@@ -1,0 +1,19 @@
+{
+  "cell_type": "HepG2",
+  "source_sample": "HepG2_09",
+  "cell_id": 6,
+  "source_bbox_xyxy": [
+    253,
+    160,
+    415,
+    327
+  ],
+  "padding_pixels": 10,
+  "modalities": [
+    "OCT",
+    "protein",
+    "lipid",
+    "nadh",
+    "fad"
+  ]
+}

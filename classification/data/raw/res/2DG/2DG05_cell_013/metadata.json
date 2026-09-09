@@ -1,0 +1,19 @@
+{
+  "cell_type": "2DG",
+  "source_sample": "2DG05",
+  "cell_id": 13,
+  "source_bbox_xyxy": [
+    387,
+    294,
+    511,
+    448
+  ],
+  "padding_pixels": 10,
+  "modalities": [
+    "OCT",
+    "protein",
+    "lipid",
+    "nadh",
+    "fad"
+  ]
+}

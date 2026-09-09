@@ -1,0 +1,19 @@
+{
+  "cell_type": "HeLa",
+  "source_sample": "Hela_10",
+  "cell_id": 7,
+  "source_bbox_xyxy": [
+    450,
+    369,
+    662,
+    550
+  ],
+  "padding_pixels": 10,
+  "modalities": [
+    "OCT",
+    "protein",
+    "lipid",
+    "nadh",
+    "fad"
+  ]
+}

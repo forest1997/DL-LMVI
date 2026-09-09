@@ -1,0 +1,19 @@
+{
+  "cell_type": "OA",
+  "source_sample": "oa_03",
+  "cell_id": 1,
+  "source_bbox_xyxy": [
+    386,
+    0,
+    516,
+    74
+  ],
+  "padding_pixels": 10,
+  "modalities": [
+    "OCT",
+    "protein",
+    "lipid",
+    "nadh",
+    "fad"
+  ]
+}

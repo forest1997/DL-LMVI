@@ -1,0 +1,10 @@
+{
+  "cell_type": "HepG2",
+  "sample_id": "HepG2_05",
+  "image_shape": [
+    550,
+    800
+  ],
+  "cell_count": 4,
+  "label_file": "HepG2_05.npz"
+}

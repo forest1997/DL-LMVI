@@ -1,0 +1,29 @@
+{
+  "class_order": [
+    "HeLa",
+    "OA",
+    "HepG2",
+    "2DG"
+  ],
+  "held_out_cells": 79,
+  "bootstrap_unit": "source_sample, stratified by class",
+  "bootstrap_repeats": 1000,
+  "bootstrap_seeds": {
+    "D-FFOCT": 42,
+    "SRS Lipid/Protein": 43,
+    "2PEF FAD/(FAD+NADH)": 44,
+    "D-FFOCT + SRS": 45,
+    "D-FFOCT + 2PEF": 46,
+    "SRS + 2PEF": 47,
+    "Trimodal": 20260812
+  },
+  "maximum_absolute_differences": {
+    "accuracy": 4.1772141301521515e-11,
+    "macro_f1": 2.5375923584647353e-11,
+    "macro_auc": 4.1562087105262435e-11,
+    "accuracy_ci_low": 4.8780424144467815e-11,
+    "accuracy_ci_high": 4.736844250174954e-11
+  },
+  "stored_results_verified": true,
+  "tolerance": 5e-10
+}

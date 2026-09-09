@@ -1,0 +1,23 @@
+# DL-LMVI
+
+Deep-learning workflows for LMVI.
+
+## Projects
+
+- [denoising](denoising/README.md): MATLAB D-FFOCT quantitative denoising, trained checkpoint, example input maps, and expected outputs. [中文说明](denoising/README_CN.md)
+- [classification](classification/README.md): trimodal cell classification using D-FFOCT, SRS, and 2PEF, with source code, configurations, the packaged 502-cell dataset, model checkpoints, and reference results.
+
+Run each workflow from its own project directory as described in its README.
+
+## Downloading model files
+
+Model checkpoints (`*.pt` and `*.mat` under the model directories) are stored with Git LFS. Install Git LFS, then clone this repository:
+
+```sh
+git lfs install
+git clone https://github.com/forest1997/DL-LMVI.git
+cd DL-LMVI
+git lfs pull
+```
+
+Access to this private repository requires an authorized GitHub account.

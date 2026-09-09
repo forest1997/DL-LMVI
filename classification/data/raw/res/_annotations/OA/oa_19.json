@@ -1,0 +1,10 @@
+{
+  "cell_type": "OA",
+  "sample_id": "oa_19",
+  "image_shape": [
+    550,
+    800
+  ],
+  "cell_count": 8,
+  "label_file": "oa_19.npz"
+}

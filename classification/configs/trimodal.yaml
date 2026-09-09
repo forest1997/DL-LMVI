@@ -1,0 +1,33 @@
+data_root: 'data\raw\res'
+output_dir: 'results\trimodal_retraining'
+base_results_dir: 'models\unimodal_initialization'
+teacher_checkpoints_dir: 'models\training_only_teachers'
+split_manifest: 'data\manifests\split_manifest.csv'
+
+class_order: [HeLa, OA, HepG2, 2DG]
+display_names: {HeLa: HeLa, OA: OA, HepG2: HepG2, 2DG: 2DG}
+modalities: [oct, srs_ratio, tpef_orr_minimal]
+
+seeds: [42, 43, 44, 45, 46]
+image_size: 96
+batch_size: 32
+num_workers: 0
+epochs: 60
+early_stopping_patience: 12
+learning_rate: 0.00025
+weight_decay: 0.0003
+dropout: 0.35
+projection_dim: 256
+gate_hidden_dim: 128
+fusion_mode: 'gated_concatenation'
+gate_min_weight: 0.15
+modality_dropout: 0.05
+auxiliary_loss_weight: 0.10
+gate_balance_weight: 0.01
+distillation_weight: 0.50
+distillation_temperature: 2.0
+freeze_encoders: true
+ratio_epsilon: 1.0
+ratio_log_clip: 4.0
+tpef_signal_quantile: 0.10
+bootstrap_repeats: 1000

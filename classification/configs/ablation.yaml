@@ -1,0 +1,30 @@
+data_root: 'data\raw\res'
+output_dir: 'results\ablation_retraining'
+split_manifest: 'data\manifests\split_manifest.csv'
+
+class_order: [HeLa, OA, HepG2, 2DG]
+display_names: {HeLa: HeLa, OA: OA, HepG2: HepG2, 2DG: 2DG}
+
+seed: 42
+image_size: 96
+batch_size: 32
+num_workers: 0
+epochs: 40
+early_stopping_patience: 9
+learning_rate: 0.0003
+weight_decay: 0.0001
+dropout: 0.35
+embedding_dim: 256
+ratio_epsilon: 1.0
+ratio_log_clip: 4.0
+bootstrap_repeats: 1000
+outer_folds: 5
+tpef_signal_quantile: 0.10
+
+experiments:
+  DFFOCT_only: [oct]
+  SRS_only: [srs_ratio]
+  2PEF_only: [tpef_orr_minimal]
+  DFFOCT_SRS: [oct, srs_ratio]
+  DFFOCT_2PEF: [oct, tpef_orr_minimal]
+  SRS_2PEF: [srs_ratio, tpef_orr_minimal]

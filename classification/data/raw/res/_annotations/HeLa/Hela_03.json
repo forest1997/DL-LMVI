@@ -1,0 +1,10 @@
+{
+  "cell_type": "HeLa",
+  "sample_id": "Hela_03",
+  "image_shape": [
+    550,
+    800
+  ],
+  "cell_count": 13,
+  "label_file": "Hela_03.npz"
+}

@@ -1,0 +1,10 @@
+{
+  "cell_type": "2DG",
+  "sample_id": "2DG07",
+  "image_shape": [
+    550,
+    800
+  ],
+  "cell_count": 22,
+  "label_file": "2DG07.npz"
+}
