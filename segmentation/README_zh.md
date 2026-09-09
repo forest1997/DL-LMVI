@@ -21,7 +21,7 @@
 
 - 自动推理入口：`Automatic_Segmentation/UNet++-ResNet34_cellpose_outline_improved.py`，2026-07-30 改进版（原脚本没有单独的语义版本号）。
 - 细胞核和核仁：U-Net++ / ResNet34，权重 `trained_models/best_unetpp_resnet34.pth`，512 × 512 letterbox 输入，阈值 0.5。
-- 整细胞：Cellpose 3.1.1.1 的 legacy `cyto`，权重 `cellpose_models/cytotorch_0`，绿色通道 `[2, 0]`，直径 80 px，flow threshold 0.4，cell probability threshold 0.0。
+- 整细胞：Cellpose 3.1.1.1 的  `cyto`，权重 `cellpose_models/cytotorch_0`，绿色通道 `[2, 0]`，直径 80 px，flow threshold 0.4，cell probability threshold 0.0。
 - 胞质 = 整细胞减最终细胞核；核限制在整细胞内，核仁限制在核内。
 - `cyto3` 是原程序保留的备用模型，并非本图使用的主模型。正常日志应显示 `model_type='cyto'`；如出现 fallback 提示，该次运行不再等同于已验证配置。
 
