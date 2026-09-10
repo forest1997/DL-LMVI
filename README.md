@@ -9,6 +9,8 @@ Deep-learning workflows for LMVI.
 
 - [segmentation](segmentation/README.md): automatic U-Net++ / ResNet34 and Cellpose segmentation, model weights, and validation inputs, masks, and records.
 
+- [ld-tracking-plots](ld-tracking-plots/README.md): lipid droplet trajectory data and MATLAB plotting code for Fig. 4o.
+
 Run each workflow from its own project directory as described in its README.
 
 ## Downloading model files
@@ -23,4 +25,5 @@ git lfs pull
 ```
 
 Access to this private repository requires an authorized GitHub account.
+
 
