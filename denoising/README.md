@@ -18,7 +18,6 @@ The model converts quantitative maps from a short 48-frame acquisition into deno
 
 - `source/`: preprocessing, training and inference code
 - `model/`: trained model checkpoint
-- `config/`: training, validation and test split files
 - `data/`: one example input and matched reference
 - `output/`: example denoised results
 - `tests/`: package verification script
