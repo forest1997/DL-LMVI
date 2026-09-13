@@ -1,4 +1,4 @@
-%% train_DFFOCT_48HVto512HV_quant_customLoop.m
+%% train_DFFOCT_logV_intensityPreserving_finetune.m
 % Quantitative-map training with frame-count-normalized dynamic intensity:
 %   short [H_Hz, log10(V_power)] -> long [H_Hz, log10(V_power)]
 % V_power is already frame-count normalized; do not divide by N^2 again.
@@ -15,23 +15,25 @@ map48Dir = fullfile(projectRoot, 'data', 'quant_maps', 'short_acquisition');
 map512Dir = fullfile(projectRoot, 'data', 'quant_maps', 'long_reference');
 holdoutCsv = fullfile(projectRoot, 'config', 'selected_35_images.csv');
 
-outModel = fullfile(projectRoot, 'output', 'training', 'DFFOCT_resUNet_TimeNormalizedV_dlnet.mat');
+pretrainedModel = fullfile(projectRoot, 'output', 'training', 'DFFOCT_resUNet_TimeNormalizedV_dlnet.mat');
+outModel = fullfile(projectRoot, 'output', 'training', 'DFFOCT_resUNet_TimeNormalizedV_IntensityPreserving_dlnet.mat');
 
 %% ===================== 2) Training configuration ==========================
 cfg.patchSize = [256 256];
 cfg.overlapInfer = 96;
 cfg.batchSize = 6;
-cfg.epochs = 60;
-cfg.stepsPerEpoch = 100;
-cfg.valEverySteps = 100;
-cfg.earlyStopPatience = 8;
+cfg.epochs = 16;
+cfg.stepsPerEpoch = 60;
+cfg.valEverySteps = 60;
+cfg.earlyStopPatience = 6;
 cfg.earlyStopMinDelta = 1e-4;
 cfg.preloadData = true;
 cfg.selectionHScaleHz = 10;
 cfg.selectionBiasWeight = 0.5;
+cfg.selectionVMeanWeight = 1.0;
 
-cfg.lr0 = 2e-4;
-cfg.lrDropPeriod = 20;
+cfg.lr0 = 3e-5;
+cfg.lrDropPeriod = 8;
 cfg.lrDropFactor = 0.5;
 cfg.beta1 = 0.9;
 cfg.beta2 = 0.999;
@@ -39,7 +41,9 @@ cfg.beta2 = 0.999;
 % Loss weights in normalized quantitative-map space.
 cfg.wH = 1.0;
 cfg.wLogV = 1.0;
-cfg.wGrad = 0.05;
+cfg.wGrad = 0.03;
+cfg.wVSymRel = 0.25;
+cfg.wVMean = 0.80;
 cfg.charbEps = 1e-3;
 cfg.gradClip = 1.0;
 
@@ -66,7 +70,7 @@ cfg.useGPU = canUseGPU();
 % Training-time RGB previews are display-only. Metrics still use H_Hz/V_power.
 cfg.showPreview = true;
 cfg.savePreview = true;
-cfg.previewDir = fullfile(projectRoot, 'output', 'training', 'preview_primary');
+cfg.previewDir = fullfile(projectRoot, 'output', 'training', 'preview_finetune');
 
 if cfg.savePreview
     ensureDir(cfg.previewDir);
@@ -115,10 +119,10 @@ fprintf("  H range: [%.4g %.4g] Hz\n", normStats.hMinHz, normStats.hMaxHz);
 fprintf("  log10(V) mean/std: %.4g / %.4g\n", normStats.logVMean, normStats.logVStd);
 fprintf("  valid log10(V) threshold: %.4g\n", normStats.validLogVMin);
 
-%% ===================== 7) Build network ==================================
-inChannels = 2;
-outChannels = 2;
-dlnet = buildResUNet_dlnet_Quant(cfg.patchSize, inChannels, outChannels);
+%% ===================== 7) Load the validated primary checkpoint ==========
+assert(isfile(pretrainedModel), "Pretrained checkpoint not found: %s", pretrainedModel);
+checkpoint = load(pretrainedModel, "dlnet");
+dlnet = checkpoint.dlnet;
 
 if cfg.useGPU
     dlnet = dlupdate(@gpuArray, dlnet);
@@ -128,11 +132,39 @@ end
 trailingAvg = [];
 trailingAvgSq = [];
 globalStep = 0;
-bestVal = inf;
-bestSelectionScore = inf;
 checksWithoutImprovement = 0;
 stopTraining = false;
 valHistory = table();
+
+% Register the original validated checkpoint as the baseline so fine-tuning
+% can never replace it with a quantitatively worse model.
+baselineStats = validateQuantSet(dlnet, valDataX, valDataY, normStats, cfg, 0);
+bestVal = baselineStats.loss;
+bestSelectionScore = baselineStats.hMAEMeanHz / cfg.selectionHScaleHz + ...
+    baselineStats.vRelMAEMean + cfg.selectionBiasWeight * ...
+    (abs(baselineStats.hBiasMeanHz) / cfg.selectionHScaleHz + ...
+    abs(baselineStats.vRelBiasMean)) + cfg.selectionVMeanWeight * ...
+    abs(log(max(baselineStats.vMeanRatio, 1e-6)));
+baselineRow = table(0, 0, 0, NaN, baselineStats.loss, bestSelectionScore, ...
+    baselineStats.hBiasMeanHz, baselineStats.hMAEMeanHz, ...
+    100*baselineStats.vRelBiasMean, 100*baselineStats.vRelMAEMean, ...
+    100*(baselineStats.vMeanRatio-1), 'VariableNames', ...
+    {'step','epoch','learningRate','trainLoss','valLoss','selectionScore', ...
+    'H_bias_Hz','H_MAE_Hz','V_rel_bias_pct','V_rel_MAE_pct','V_mean_bias_pct'});
+valHistory = [valHistory; baselineRow];
+dlnetOnDevice = dlnet;
+dlnet = dlupdate(@gather, dlnet);
+save(outModel, "dlnet", "cfg", "normStats", "pretrainedModel", ...
+    "map48Dir", "map512Dir", "trainX", "trainY", "valX", "valY", ...
+    "holdoutX", "holdoutY", "bestVal", "bestSelectionScore", ...
+    "valHistory", '-v7.3');
+dlnet = dlnetOnDevice;
+writetable(valHistory, fullfile(fileparts(outModel), ...
+    'training_history_logV_intensityPreserving.csv'));
+fprintf("Baseline score=%.4g Hbias=%.4gHz VrelBias=%.3f%% VrelMAE=%.3f%% VmeanBias=%.3f%%\n", ...
+    bestSelectionScore, baselineStats.hBiasMeanHz, ...
+    100*baselineStats.vRelBiasMean, 100*baselineStats.vRelMAEMean, ...
+    100*(baselineStats.vMeanRatio-1));
 
 %% ===================== 9) Training loop ==================================
 for epoch = 1:cfg.epochs
@@ -155,7 +187,7 @@ for epoch = 1:cfg.epochs
             dlM = gpuArray(dlM);
         end
 
-        [loss, grads] = dlfeval(@modelGradientsQuant, dlnet, dlX, dlY, dlM, cfg);
+        [loss, grads] = dlfeval(@modelGradientsQuant, dlnet, dlX, dlY, dlM, cfg, normStats);
         grads = dlupdate(@(g) clipGrad(g, cfg.gradClip), grads);
 
         [dlnet, trailingAvg, trailingAvgSq] = adamupdate(dlnet, grads, ...
@@ -168,21 +200,23 @@ for epoch = 1:cfg.epochs
             selectionScore = valStats.hMAEMeanHz / cfg.selectionHScaleHz + ...
                 valStats.vRelMAEMean + cfg.selectionBiasWeight * ...
                 (abs(valStats.hBiasMeanHz) / cfg.selectionHScaleHz + ...
-                abs(valStats.vRelBiasMean));
-            fprintf("[E%03d S%05d] lr=%.2e trainLoss=%.4g valLoss=%.4g score=%.4g Hbias=%.4gHz VrelBias=%.3f%% VrelMAE=%.3f%%\n", ...
+                abs(valStats.vRelBiasMean)) + cfg.selectionVMeanWeight * ...
+                abs(log(max(valStats.vMeanRatio, 1e-6)));
+            fprintf("[E%03d S%05d] lr=%.2e trainLoss=%.4g valLoss=%.4g score=%.4g Hbias=%.4gHz VrelBias=%.3f%% VrelMAE=%.3f%% VmeanBias=%.3f%%\n", ...
                 epoch, globalStep, lr, runningLoss / step, valStats.loss, ...
                 selectionScore, valStats.hBiasMeanHz, 100*valStats.vRelBiasMean, ...
-                100*valStats.vRelMAEMean);
+                100*valStats.vRelMAEMean, 100*(valStats.vMeanRatio-1));
 
             row = table(globalStep, epoch, lr, runningLoss / step, ...
                 valStats.loss, selectionScore, valStats.hBiasMeanHz, valStats.hMAEMeanHz, ...
                 100*valStats.vRelBiasMean, 100*valStats.vRelMAEMean, ...
+                100*(valStats.vMeanRatio-1), ...
                 'VariableNames', {'step','epoch','learningRate','trainLoss', ...
                 'valLoss','selectionScore','H_bias_Hz','H_MAE_Hz', ...
-                'V_rel_bias_pct','V_rel_MAE_pct'});
+                'V_rel_bias_pct','V_rel_MAE_pct','V_mean_bias_pct'});
             valHistory = [valHistory; row]; %#ok<AGROW>
             writetable(valHistory, fullfile(fileparts(outModel), ...
-                'training_history_logV.csv'));
+                'training_history_logV_intensityPreserving.csv'));
 
             if selectionScore < bestSelectionScore - cfg.earlyStopMinDelta
                 bestVal = valStats.loss;
@@ -217,7 +251,7 @@ for epoch = 1:cfg.epochs
     end
 end
 
-fprintf("Training finished. Best score=%.4g, associated val loss=%.4g\n", ...
+fprintf("Intensity-preserving fine-tuning finished. Best score=%.4g, associated val loss=%.4g\n", ...
     bestSelectionScore, bestVal);
 
 if isfile(outModel)
@@ -229,9 +263,9 @@ if isfile(outModel)
 end
 if ~isempty(valDataX)
     valStats = validateQuantSet(dlnet, valDataX, valDataY, normStats, cfg, globalStep);
-    fprintf("Best-checkpoint validation: valLoss=%.4g Hbias=%.4gHz VrelBias=%.3f%% VrelMAE=%.3f%%\n", ...
+    fprintf("Best-checkpoint validation: valLoss=%.4g Hbias=%.4gHz VrelBias=%.3f%% VrelMAE=%.3f%% VmeanBias=%.3f%%\n", ...
         valStats.loss, valStats.hBiasMeanHz, 100*valStats.vRelBiasMean, ...
-        100*valStats.vRelMAEMean);
+        100*valStats.vRelMAEMean, 100*(valStats.vMeanRatio-1));
 end
 
 %% ========================================================================
@@ -540,7 +574,7 @@ function [X, Y, M] = augmentTriplet(X, Y, M, cfg)
     end
 end
 
-function dlnet = buildResUNet_dlnet_Quant(patchSize, inChannels, outChannels)
+function dlnet = buildResUNet_dlnet_Quant(patchSize, inChannels, outChannels) %#ok<DEFNU>
     assert(inChannels == outChannels, ...
         'Residual output add requires inChannels == outChannels.');
 
@@ -643,7 +677,7 @@ function layers = convBlockGN(numF, prefix)
     ];
 end
 
-function [loss, grads] = modelGradientsQuant(dlnet, dlX, dlY, dlM, cfg)
+function [loss, grads] = modelGradientsQuant(dlnet, dlX, dlY, dlM, cfg, normStats)
     dlPred = forward(dlnet, dlX);
 
     denom = sum(dlM, "all") + eps;
@@ -654,12 +688,27 @@ function [loss, grads] = modelGradientsQuant(dlnet, dlX, dlY, dlM, cfg)
     lossH = sum(sqrt(errH.^2 + cfg.charbEps^2), "all") ./ denom;
     lossLogV = sum(sqrt(errV.^2 + cfg.charbEps^2), "all") ./ denom;
 
+    % Linear-V terms are computed without the common 10^logVMean factor.
+    % The symmetric relative error protects dim structures, while the
+    % per-patch log mean ratio prevents suppression of bright V peaks.
+    exponentScale = log(10) * normStats.logVStd;
+    VpredScaled = exp(exponentScale * dlPred(:,:,2,:));
+    VtargetScaled = exp(exponentScale * dlY(:,:,2,:));
+    symRelV = 2 * (VpredScaled - VtargetScaled) ./ ...
+        (VpredScaled + VtargetScaled + 1e-6);
+    lossVSymRel = sum(sqrt(symRelV.^2 + cfg.charbEps^2) .* dlM, "all") ./ denom;
+    sumVpred = sum(sum(VpredScaled .* dlM, 1), 2);
+    sumVtarget = sum(sum(VtargetScaled .* dlM, 1), 2);
+    logMeanRatio = log((sumVpred + 1e-6) ./ (sumVtarget + 1e-6));
+    lossVMean = mean(sqrt(logMeanRatio.^2 + cfg.charbEps^2), "all");
+
     [dxP, dyP] = imageGradients(dlPred);
     [dxT, dyT] = imageGradients(dlY);
     gradLoss = mean(sqrt((dxP - dxT).^2 + cfg.charbEps^2), "all") + ...
         mean(sqrt((dyP - dyT).^2 + cfg.charbEps^2), "all");
 
-    loss = cfg.wH * lossH + cfg.wLogV * lossLogV + cfg.wGrad * gradLoss;
+    loss = cfg.wH * lossH + cfg.wLogV * lossLogV + cfg.wGrad * gradLoss + ...
+        cfg.wVSymRel * lossVSymRel + cfg.wVMean * lossVMean;
     grads = dlgradient(loss, dlnet.Learnables);
 end
 
@@ -676,6 +725,8 @@ function valStats = validateQuantSet(dlnet, valX, valY, normStats, cfg, globalSt
     sumLogVError = 0;
     sumVRelError = 0;
     sumVRelAbsError = 0;
+    sumVPred = 0;
+    sumVRef = 0;
     nPixels = 0;
 
     preview = [];
@@ -707,6 +758,8 @@ function valStats = validateQuantSet(dlnet, valX, valY, normStats, cfg, globalSt
         sumLogVError = sumLogVError + sum(logVError, 'omitnan');
         sumVRelError = sumVRelError + sum(vRelError, 'omitnan');
         sumVRelAbsError = sumVRelAbsError + sum(abs(vRelError), 'omitnan');
+        sumVPred = sumVPred + sum(Vpred(mask), 'omitnan');
+        sumVRef = sumVRef + sum(Vref(mask), 'omitnan');
         nPixels = nPixels + nnz(mask);
 
         if id == 1 && shouldShowOrSavePreview(cfg)
@@ -722,6 +775,7 @@ function valStats = validateQuantSet(dlnet, valX, valY, normStats, cfg, globalSt
     valStats.logVBiasMean = sumLogVError / denom;
     valStats.vRelBiasMean = sumVRelError / denom;
     valStats.vRelMAEMean = sumVRelAbsError / denom;
+    valStats.vMeanRatio = sumVPred / max(sumVRef, normStats.vEps);
 
     if ~isempty(preview)
         titleText = sprintf('Step %06d | validation example 1 | short / predicted / long', ...

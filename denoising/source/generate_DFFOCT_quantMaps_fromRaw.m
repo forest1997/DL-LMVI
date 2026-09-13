@@ -10,6 +10,7 @@ close all; clear; clc;
 %% ===================== 1) Input/output configuration =====================
 scriptDir = fileparts(mfilename('fullpath'));
 projectRoot = fileparts(scriptDir);
+addpath(scriptDir);
 
 rootDirs = {
     fullfile(projectRoot, 'data', 'raw')
@@ -28,21 +29,16 @@ imageHeight = 550;
 numPixels = imageWidth * imageHeight;
 
 samplingRateHz = 100;
-fBandHz = [1 16];
-% fBandHz = [1 50];
-% PowerMode "legacy" matches computeHSVnewfft.m: abs(fft).^2.
-% Other options are "perSample" and "amplitudeSquared".
+fBandHz = [1 50];
+% Normalize FFT power by the actual frame count squared before training.
 quantOpts = struct();
 quantOpts.FrameNormalize = true;
-quantOpts.PowerMode = "legacy";
+quantOpts.PowerMode = "amplitudeSquared";
 quantOpts.EpsPower = 1e-12;
 quantOpts.OutputClass = "single";
 
 processConfigs = {
-    % {16,  '_Range16',  'Range16'}
-    % {32,  '_Range32',  'Range32'}
     {48,  '_Range48',  'short_acquisition'}
-    {64,  '_Range64',  'Range64'}
     {512, '_Range512', 'long_reference'}
 };
 

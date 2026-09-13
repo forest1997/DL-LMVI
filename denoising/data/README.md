@@ -1,14 +1,14 @@
-# Data placement
+# Included quantitative-map example
 
-- Put raw `uint16` time-series files in `raw/` before preprocessing.
-- Short-acquisition quantitative MAT files are written to or placed in
-  `quant_maps/short_acquisition/`.
-- Matched long-acquisition reference MAT files are written to
-  `quant_maps/long_reference/` and are required for training, but not inference.
+`quant_maps/short_acquisition` contains one 48-frame OA-cell map.
+`quant_maps/long_reference` contains its matching 512-frame reference.
+Both use `powerMode="amplitudeSquared"`: V is already divided by N squared.
+Do not use v1 legacy V values as v2 inputs. H is in Hz; V is linear.
 
-Each quantitative MAT file must contain a struct named `maps`. See the main
-README for the required fields and acquisition assumptions.
+The example is in the fixed 35-image evaluation list. It is enough for inference
+but not training. The full training dataset is not included.
 
-One paired OA-cell example is included so the full package can be tested
-immediately. Additional files can be added to the same folders and will be
-processed in batch.
+`raw` is intentionally empty. Optional raw preprocessing assumes headerless
+little-endian uint16, 800 x 550 pixels per frame, and 100 Hz. Check these settings
+before preprocessing new acquisitions. The 48-frame window is the beginning
+of the same file used for the 512-frame reference.

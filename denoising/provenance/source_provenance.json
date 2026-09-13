@@ -1,0 +1,47 @@
+[
+  {
+    "file": "source/computeDFFOCTQuantMaps.m",
+    "source_name": "computeDFFOCTQuantMaps.m",
+    "source_sha256": "2577cc9841280f0e41d7331ae7617168cf6dbe4cb8b4dff3f4bcd26532ded4a4"
+  },
+  {
+    "file": "source/quantMapsToRgbPreview.m",
+    "source_name": "quantMapsToRgbPreview.m",
+    "source_sha256": "85bba2a12dd239f5cdd1e47ea9d1bb8459725bc6c35537dbd358182613f10eff"
+  },
+  {
+    "file": "source/train_DFFOCT_48HVto512HV_quant_customLoop.m",
+    "source_name": "train_DFFOCT_48HVto512HV_quant_customLoop.m",
+    "source_sha256": "538aefdf44cc42b7177a92383393d0550a308321c5c95bc1eea4168ec67717c2"
+  },
+  {
+    "file": "source/train_DFFOCT_logV_intensityPreserving_finetune.m",
+    "source_name": "train_DFFOCT_logV_intensityPreserving_finetune.m",
+    "source_sha256": "7ab17357ae16b9dc79ff4c767c2c73dd94bd15da77ade4fcf053eaff231da5fd"
+  },
+  {
+    "file": "model/DFFOCT_resUNet_TimeNormalizedV_IntensityPreserving_dlnet.mat",
+    "source_name": "DFFOCT_resUNet_TimeNormalizedV_IntensityPreserving_dlnet.mat",
+    "source_sha256": "2cb9da4f008cef244d3552e8670e80339bcbca3b08d5d53bd2237698a2ee28ca"
+  },
+  {
+    "file": "provenance/training_history_logV.csv",
+    "source_name": "training_history_logV.csv",
+    "source_sha256": "673ec441b46df38ce4ed1429f5bcc4257ffdbef7d2ce9e24b22e17afb58a9700"
+  },
+  {
+    "file": "provenance/training_history_logV_intensityPreserving.csv",
+    "source_name": "training_history_logV_intensityPreserving.csv",
+    "source_sha256": "aa123961cdc30ec800be32e5d225f7c2d3523e9907c4d33f0496f3c2fcfc09ed"
+  },
+  {
+    "file": "data/quant_maps/short_acquisition/F_OAFOV3_OAcellsLFOV3_images_20251113_220325_Range48_quant.mat",
+    "source_name": "F_OAFOV3_OAcellsLFOV3_images_20251113_220325_Range48_quant.mat",
+    "source_sha256": "2a5dc744e3a7ca00a9f8d19949ca1062c0be26344816d18ef1dffbf336022c82"
+  },
+  {
+    "file": "data/quant_maps/long_reference/F_OAFOV3_OAcellsLFOV3_images_20251113_220325_Range512_quant.mat",
+    "source_name": "F_OAFOV3_OAcellsLFOV3_images_20251113_220325_Range512_quant.mat",
+    "source_sha256": "113c5416c390ce6bda1bc9c641b2f04dec889eeca50b2533b92410e61dc6267e"
+  }
+]

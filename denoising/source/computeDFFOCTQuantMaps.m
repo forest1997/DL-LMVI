@@ -8,8 +8,9 @@ function maps = computeDFFOCTQuantMaps(data, samplingRateHz, fBandHz, opts)
 %   fBandHz        [low high] frequency band for dynamic intensity
 %   opts           optional struct:
 %       FrameNormalize : divide each frame by its global mean, default true
-%       PowerMode      : "legacy", "perSample", or "amplitudeSquared"
-%                        legacy matches the previous abs(fft).^2 behavior
+%       PowerMode      : "amplitudeSquared", "perSample", or "legacy"
+%                        amplitudeSquared uses abs(fft).^2/N^2 so V can be
+%                        compared across different acquisition lengths
 %       EpsPower       : small value for numerical safety
 %       OutputClass    : "single" or "double"
 %
@@ -53,6 +54,9 @@ function maps = computeDFFOCTQuantMaps(data, samplingRateHz, fBandHz, opts)
         case "persample"
             power = power ./ frames;
         case "amplitudesquared"
+            % Band-integrated power in amplitude-squared units. Because the
+            % FFT amplitude scales with frame count, N^2 normalization is
+            % required before comparing short and long acquisitions.
             power = power ./ (frames.^2);
         otherwise
             error('Unknown PowerMode: %s', opts.PowerMode);
@@ -114,7 +118,7 @@ function opts = fillDefaults(opts)
         opts.FrameNormalize = true;
     end
     if ~isfield(opts, 'PowerMode')
-        opts.PowerMode = "legacy";
+        opts.PowerMode = "amplitudeSquared";
     end
     if ~isfield(opts, 'EpsPower')
         opts.EpsPower = 1e-12;

@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-09-13 16:51:26",
+  "matlabVersion": "25.2.0.3042426 (R2025b) Update 1",
+  "finalCheckpointEpoch": 1,
+  "trainingValidationTestCounts": [
+    47,
+    9,
+    35
+  ],
+  "originalPipelineComparison": {
+    "maxAbsoluteHErrorHz": 0,
+    "maxAbsoluteVError": 0,
+    "anchorScale": 1.0668367979098257
+  },
+  "checkpointSplitMatchesManifest": true,
+  "primaryAndFinetuneNormalizationIdentical": true,
+  "syntaxErrors": 0,
+  "cpuExampleVerification": {
+    "passed": true,
+    "useGPU": false,
+    "maxAbsoluteHErrorHz": 0.025970935821533203,
+    "maxAbsoluteVError": 5.0629023462533951E-7,
+    "meanAbsoluteHErrorHz": 0.0029328181864185766,
+    "HMaximumToleranceHz": 0.05,
+    "HMeanToleranceHz": 0.005,
+    "VPeakRelativeTolerance": 0.001,
+    "VErrorRelativeToPeak": 0.00047058574020247845,
+    "anchorScale": 1.0669811748612279
+  },
+  "trainingRerun": false,
+  "note": "Inference and preprocessing tested; full model training was not repeated during packaging."
+}

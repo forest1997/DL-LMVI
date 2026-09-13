@@ -1,19 +1,27 @@
-%% run_DFFOCT_denoising.m
+function results = run_DFFOCT_denoising(useGPU, outputDir)
 % Apply the trained residual U-Net to short-acquisition quantitative maps.
 % Input MAT files must contain a struct named "maps" with H_Hz and V_power.
 % The model operates on [H_Hz, log10(V_power)] internally and saves H_Hz and
 % linear V_power outputs. RGB images are display-only old-HSV-style previews.
-
-clear; clc; close all;
 
 %% Paths
 scriptDir = fileparts(mfilename('fullpath'));
 projectRoot = fileparts(scriptDir);
 
 modelFile = fullfile(projectRoot, "model", ...
-    "DFFOCT_resUNet_H_logV_checkpoint.mat");
+    "DFFOCT_resUNet_TimeNormalizedV_IntensityPreserving_dlnet.mat");
 inputDir = fullfile(projectRoot, "data", "quant_maps", "short_acquisition");
-outputDir = fullfile(projectRoot, "output", "denoised");
+if nargin < 1 || isempty(useGPU)
+    useGPU = canUseGPU();
+end
+if nargin < 2 || isempty(outputDir)
+    outputDir = fullfile(projectRoot, "output", "denoised");
+end
+assert(isscalar(useGPU) && (islogical(useGPU) || ismember(useGPU, [0 1])), ...
+    'useGPU must be a logical scalar.');
+assert(~useGPU || canUseGPU(), 'No supported GPU is available. Use false for CPU.');
+assert(isfile(modelFile), 'Missing supplied checkpoint: %s', modelFile);
+addpath(scriptDir);
 mapOutputDir = fullfile(outputDir, "quantitative_maps");
 rgbOutputDir = fullfile(outputDir, "rgb_preview");
 
@@ -29,14 +37,12 @@ assert(isfield(S, 'normStats'), 'Checkpoint does not contain normStats.');
 dlnet = S.dlnet;
 cfg = S.cfg;
 normStats = S.normStats;
-useGPU = canUseGPU();
+assert(isfield(normStats, 'vPowerNormalization') && ...
+    strcmp(string(normStats.vPowerNormalization), 'frameCountSquared'), ...
+    'This entry point requires a frame-count-normalized checkpoint.');
 
 if useGPU
-    try
-        dlnet = dlupdate(@gpuArray, dlnet);
-    catch
-        % The network may already be stored on the GPU.
-    end
+    dlnet = dlupdate(@gpuArray, dlnet);
 else
     dlnet = dlupdate(@gather, dlnet);
 end
@@ -48,6 +54,7 @@ assert(~isempty(files), 'No MAT files found in %s.', inputDir);
 fprintf('Model: %s\n', modelFile);
 fprintf('Input files: %d\n', numel(files));
 fprintf('GPU enabled: %d\n', useGPU);
+results = struct('inputFile', {}, 'outputFile', {}, 'rgbFile', {}, 'anchorScale', {});
 
 for i = 1:numel(files)
     inputFile = fullfile(files(i).folder, files(i).name);
@@ -59,17 +66,35 @@ for i = 1:numel(files)
     X = normalizeQuantMaps(inputMaps, normStats);
     Y = predictTiledQuant(dlnet, X, cfg.patchSize, cfg.overlapInfer, useGPU);
     [Hpred, Vpred] = denormalizeQuantChannels(Y, normStats);
+    [anchorScale, anchorMask] = inputAnchoredVScale( ...
+        double(inputMaps.V_power), Vpred, inputMaps.validMask, normStats.vEps);
+    Vpred = Vpred * anchorScale;
+    assert(all(isfinite(Hpred), 'all') && all(isfinite(Vpred), 'all'), ...
+        'Inference returned non-finite values.');
 
     maps = struct();
     maps.H_Hz = single(Hpred);
     maps.S_invHz = [];
     maps.V_power = single(Vpred);
-    maps.validMask = isfinite(Hpred) & isfinite(Vpred) & Vpred > 0;
-    maps.sourceInput = string(inputFile);
-    maps.modelFile = string(modelFile);
-    maps.version = "dffoct-denoising-minimal-v1";
+    maps.validMask = inputMaps.validMask & isfinite(Hpred) & isfinite(Vpred) & Vpred > 0;
+    maps.sourceInput = string(files(i).name);
+    [~, modelStem, modelExt] = fileparts(modelFile);
+    maps.modelFile = string(modelStem) + string(modelExt);
+    maps.powerMode = "amplitudeSquared";
+    maps.vNormalization = "sum(abs(FFT).^2/N^2) within band";
+    maps.bandHz = inputMaps.bandHz;
+    maps.samplingRateHz = inputMaps.samplingRateHz;
+    maps.sourceFrameCount = inputMaps.frameCount;
+    maps.targetFrameCount = 512;
+    maps.frameNormalize = inputMaps.frameNormalize;
+    maps.inputAnchorScale = anchorScale;
+    maps.inputAnchorMaskPixelCount = nnz(anchorMask);
+    maps.inputAnchorPercentile = 20;
+    maps.inputAnchorScaleRange = [0.5 2.0];
+    maps.version = "dffoct-denoising-minimal-v2-time-normalized-intensity-preserving";
 
-    save(fullfile(mapOutputDir, stem + "_denoised.mat"), ...
+    outMat = fullfile(mapOutputDir, stem + "_denoised.mat");
+    save(outMat, ...
         'maps', 'normStats', '-v7.3');
 
     displayOpts = struct();
@@ -80,10 +105,15 @@ for i = 1:numel(files)
     % S is not predicted by this two-channel network. A fixed saturation is
     % therefore used so RGB remains a transparent display representation.
     rgbPred = quantMapsToRgbPreview(Hpred, [], Vpred, displayOpts);
-    imwrite(rgbPred, fullfile(rgbOutputDir, stem + "_denoised_rgb.png"));
+    outPng = fullfile(rgbOutputDir, stem + "_denoised_rgb.png");
+    imwrite(rgbPred, outPng);
+    results(i) = struct('inputFile', string(inputFile), 'outputFile', string(outMat), ...
+        'rgbFile', string(outPng), 'anchorScale', anchorScale);
+    fprintf('  Input-only V anchor factor: %.6f\n', anchorScale);
 end
 
 fprintf('Denoising complete. Results: %s\n', outputDir);
+end
 
 %% Local functions
 function ensureDir(folderName)
@@ -109,6 +139,26 @@ function maps = loadQuantMaps(filename)
         'maps must contain H_Hz and V_power: %s', filename);
     maps.H_Hz = single(maps.H_Hz);
     maps.V_power = single(maps.V_power);
+    validateDFFOCTInputMaps(maps, 48);
+    if ~isfield(maps, 'validMask')
+        maps.validMask = isfinite(maps.H_Hz) & isfinite(maps.V_power) & maps.V_power > 0;
+    else
+        maps.validMask = logical(maps.validMask);
+    end
+end
+
+function [scale, mask] = inputAnchoredVScale(Vinput, Vpred, validMask, vEps)
+    mask = logical(validMask) & isfinite(Vinput) & isfinite(Vpred) & ...
+        Vinput > 0 & Vpred > 0;
+    if ~any(mask, 'all')
+        scale = 1;
+        return;
+    end
+    logVinput = log10(max(Vinput, vEps));
+    threshold = prctile(logVinput(mask), 20);
+    mask = mask & logVinput >= threshold;
+    scale = sum(Vinput(mask), 'omitnan') / max(sum(Vpred(mask), 'omitnan'), vEps);
+    scale = min(max(scale, 0.5), 2.0);
 end
 
 function X = normalizeQuantMaps(maps, normStats)
