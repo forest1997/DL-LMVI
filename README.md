@@ -24,6 +24,5 @@ cd DL-LMVI
 git lfs pull
 ```
 
-Access to this private repository requires an authorized GitHub account.
 
 
