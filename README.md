@@ -4,7 +4,7 @@ Deep-learning workflows for LMVI.
 
 ## Projects
 
-- [denoising](denoising/README.md): MATLAB D-FFOCT quantitative denoising, trained checkpoint, example input maps, and expected outputs. [中文说明](denoising/README_CN.md)
+- [denoising](denoising/README.md): MATLAB D-FFOCT quantitative denoising, trained checkpoint, example input maps, and expected outputs.
 - [classification](classification/README.md): trimodal cell classification using D-FFOCT, SRS, and 2PEF, with source code, configurations, the packaged 502-cell dataset, model checkpoints, and reference results.
 
 - [segmentation](segmentation/README.md): automatic U-Net++ / ResNet34 and Cellpose segmentation, model weights, and validation inputs, masks, and records.
